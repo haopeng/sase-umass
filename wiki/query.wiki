@@ -1,7 +1,6 @@
 #labels query
 #This page tells you how to write a query.
 
-= Format =
 
 
 
@@ -16,3 +15,10 @@ State=2 & type = normal & eventtype = stock2 | edgetype = begin
 State=3 & type = normal & eventtype = stock3 | edgetype = begin 
 
 end
+
+
+= Format Explanation =
+
+The first line is the config line, describing the selection strategy, the time window and the partiton attribute if any.
+
+The following lines except the last represent states, and each line corresponds to one state.
