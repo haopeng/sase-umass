@@ -16,13 +16,13 @@ increaseProbability = 70
 end
 
 ===Explanation===
-*streamSize*: specifies the number of events in the input stream 
-*maxPrice*: specifies the maximum value for the attribute "Price"
-*maxSymbol*: specifies the maximum value for the attribute "Symbol"
-*maxVolume*: specifies the maximum value for the attribute "Volume"
-*randomSeed*: the seed for random number generator
-*increaseProbability*: specifies the probability that the price increases
-*end*: specifies the end of the input file
+  * *streamSize*: specifies the number of events in the input stream 
+  * *maxPrice*: specifies the maximum value for the attribute "Price"
+  * *maxSymbol*: specifies the maximum value for the attribute "Symbol"
+  * *maxVolume*: specifies the maximum value for the attribute "Volume"
+  * *randomSeed*: the seed for random number generator
+  * *increaseProbability*: specifies the probability that the price increases
+  * *end*: specifies the end of the input file
 
 
 = Query =
