@@ -17,13 +17,13 @@ Today high-volume event streams naturally exist in a variety of environments inc
 
 CEP aims to provide a set of core functions:
 
-Filtering removes unwanted events
-Correlation detects complex patterns across different events.
-Aggregation computes aggregate values.
-Transformation generates new types of events.
+  * Filtering removes unwanted events
+  * Correlation detects complex patterns across different events.
+  * Aggregation computes aggregate values.
+  * Transformation generates new types of events.
 To this end, we are designing and implementing a complex event processor, which we call SASE (Stream-based And Shared Event processing). SASE provides:
 
-A rich declarative event language
-Formal semantics of the event language
-Theorectical underpinnings of CEP
-An efficient automata-based implementation
+  * A rich declarative event language
+  * Formal semantics of the event language
+  * Theorectical underpinnings of CEP
+  * An efficient automata-based implementation
