@@ -1,0 +1,14 @@
+#labels install
+#This page tells how to install sase on your machine.
+
+= Requirement =
+
+ * Install the Java Runtime Environment version 1.5.x or later
+
+
+= Details =
+
+ * Download the SASE package and extract it to a suitable directory.
+ * Set the SASE_HOME environment variable to point to the SASE installation directory.
+ * Add $SASE_HOME/bin to the PATH to access all the executables.
+ * Add $SASE_HOME/lib/jeval.jar to the CLASSPATH.
