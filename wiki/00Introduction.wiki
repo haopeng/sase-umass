@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+#Overview of this project.
 
 = Introduction =
 
@@ -11,3 +11,19 @@ Add your content here.  Format your content with:
   * Text in *bold* or _italic_
   * Headings, paragraphs, and lists
   * Automatic links to other wiki pages
+
+=Project Background=
+Today high-volume event streams naturally exist in a variety of environments including sensing devices, financial services, network monitors, etc. An increasing number of applications require that useful information be extracted from such event streams in a timely manner. Such translation from event streams to useful, actionable information is realized by a new processing paradigm called complex event processing.
+
+CEP aims to provide a set of core functions:
+
+Filtering removes unwanted events
+Correlation detects complex patterns across different events.
+Aggregation computes aggregate values.
+Transformation generates new types of events.
+To this end, we are designing and implementing a complex event processor, which we call SASE (Stream-based And Shared Event processing). SASE provides:
+
+A rich declarative event language
+Formal semantics of the event language
+Theorectical underpinnings of CEP
+An efficient automata-based implementation
