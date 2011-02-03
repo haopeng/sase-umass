@@ -1,13 +1,12 @@
 #People who contributed to this project.
 
 = Professors =
-[http://www.cs.umass.edu/~yanlei/ Yanlei Diao]
+[http://www.cs.umass.edu/~yanlei/ Yanlei Diao] University of Massachusetts Amherst
+
+[http://www.cs.umass.edu/~immerman/ Neil Immerman] University of Massachusetts Amherst
 
 
 
 = Students =
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+[http://www.cs.umass.edu/~haopeng/ Haopeng Zhang] University of Massachusetts Amherst
