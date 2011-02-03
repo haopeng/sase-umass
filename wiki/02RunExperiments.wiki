@@ -1,6 +1,31 @@
 #This page tells how to run the engine .
 
 = Stream =
-This is the input stream
+==In Class ==
+The stream can be configured in the class DebugUI.
+
+==Config File==
+The stream can also be configured by an input file describing the stream specs.
+===Example===
+streamSize = 100000
+maxPrice = 1000
+maxSymbol = 2
+maxVolume = 1000
+randomSeed = 10
+increaseProbability = 70
+end
+
+===Explanation===
+*streamSize*: specifies the number of events in the input stream 
+*maxPrice*: specifies the maximum value for the attribute "Price"
+*maxSymbol*: specifies the maximum value for the attribute "Symbol"
+*maxVolume*: specifies the maximum value for the attribute "Volume"
+*randomSeed*: the seed for random number generator
+*increaseProbability*: specifies the probability that the price increases
+*end*: specifies the end of the input file
+
 
 = Query =
+
+
+= Commands =
