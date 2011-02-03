@@ -28,3 +28,11 @@ end
 We provide a bunch of example queries, you can find them in path: /sase-publish/query
 
 = Commands =
+===Example===
+
+
+java -Xms100m -Xmx3000m edu.umass.cs.sase.UI.CommandLineUI $HOME/sase-publish/query/performance/sigmod06/DomainSize/domainsize.query $HOME/sase-publish/query/performance/sigmod06/DomainSize/domainsize100.stream 0  >>06results/ds100.result
+
+===Explanation===
+  * *edu.umass.cs.sase.UI.CommandLineUI*, the main class
+  * *$HOME/sase-publish/query/performance/sigmod06/DomainSize/domainsize.query*, the query file location
