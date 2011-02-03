@@ -1,16 +1,5 @@
 #Overview of this project.
 
-= Introduction =
-
-Add your content here.
-
-
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
 
 =Project Background=
 Today high-volume event streams naturally exist in a variety of environments including sensing devices, financial services, network monitors, etc. An increasing number of applications require that useful information be extracted from such event streams in a timely manner. Such translation from event streams to useful, actionable information is realized by a new processing paradigm called complex event processing.
@@ -27,3 +16,21 @@ To this end, we are designing and implementing a complex event processor, which 
   * Formal semantics of the event language
   * Theorectical underpinnings of CEP
   * An efficient automata-based implementation
+
+=Technologies=
+
+==Major Components==
+In the package of Sase1.0, we include the following items:
+
+  * Command Line User Interface
+  * Stream Generator: generates synthetic data for academic experiments
+  * NFA Parser: reads in NFA files in a predefined format
+  * Query Evaluation Engine: evaluates streams against given queries
+
+==Selection Strategies=
+In Sase1.0, we support the following selection strategies:
+
+  * Partition Congituigy
+  * Skip Till Next Match
+
+For the details of the selection strategies, please read our Sigmod'08 paper.
