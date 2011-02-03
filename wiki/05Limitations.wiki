@@ -1,5 +1,7 @@
 #This page tells the known bugs and limitations of the system.
 
+If you happen to find bugs, please email Haopeng Zhang( haopeng@cs.umasss.edu), we really appreciate your help!
+
 = Limitations=
 
 
