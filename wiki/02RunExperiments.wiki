@@ -24,8 +24,7 @@ end
   * *increaseProbability*: specifies the probability that the price increases
   * *end*: specifies the end of the input file
 
-
 = Query =
-
+We provide a bunch of example queries, you can find them in path: /sase-publish/query
 
 = Commands =
