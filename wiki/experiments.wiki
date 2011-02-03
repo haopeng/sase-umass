@@ -1,9 +1,0 @@
-#This page introduces the experiments we provided in the package.
-
-= SIGMOD 06=
- * Domain Size
- * Window Size
-
-= SIGMOD 08 =
- * Different Queries
- * Window Size
