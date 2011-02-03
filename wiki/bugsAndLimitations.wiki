@@ -1,6 +1,0 @@
-#This page tells the known bugs and limitations of the system.
-
-= Limitations=
-
-
-= Bugs=
