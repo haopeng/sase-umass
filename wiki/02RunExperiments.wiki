@@ -35,4 +35,5 @@ java -Xms100m -Xmx3000m edu.umass.cs.sase.UI.CommandLineUI $HOME/sase-publish/qu
 
 ===Explanation===
   * *edu.umass.cs.sase.UI.CommandLineUI*, the main class
-  * *$HOME/sase-publish/query/performance/sigmod06/DomainSize/domainsize.query*, the query file location
+  * *$HOME/sase-publish/query/performance/sigmod06/DomainSize/domainsize.query*, the location of the query file
+  * *$HOME/sase-publish/query/performance/sigmod06/DomainSize/domainsize100.stream *, the location of the stream configuration file
