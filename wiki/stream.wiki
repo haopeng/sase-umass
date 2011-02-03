@@ -2,9 +2,13 @@
 
 =Sample =
 streamSize = 10000
+
 maxPrice = 10000
+
 maxSymbol = 20
+
 maxVolume = 1000
+
 randomSeed = 10
 end
 
