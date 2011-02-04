@@ -2,20 +2,20 @@
 #People who contributed to this project.
 
 =Faculty=
-[http://www.cs.umass.edu/~yanlei/ Yanlei Diao] University of Massachusetts Amherst
+  * [http://www.cs.umass.edu/~yanlei/ Yanlei Diao] University of Massachusetts Amherst
 
-[http://www.cs.umass.edu/~immerman/ Neil Immerman] University of Massachusetts Amherst
+  * [http://www.cs.umass.edu/~immerman/ Neil Immerman] University of Massachusetts Amherst
 
 
 
 =Graduate Students=
 
-[http://www.cs.umass.edu/~haopeng/ Haopeng Zhang] University of Massachusetts Amherst
-[http://www.cs.umass.edu/~dpg/ Daniel Gyllstrom] University of Massachusetts Amherst
-Jagrati Agrawal
+  * [http://www.cs.umass.edu/~haopeng/ Haopeng Zhang] University of Massachusetts Amherst
+  * [http://www.cs.umass.edu/~dpg/ Daniel Gyllstrom] University of Massachusetts Amherst 
+  * Jagrati Agrawal
 
 =Collaborators=
 
-Eugene Wu
+  * Eugene Wu
 
 We would also like to thank Hee-Jin Chae, Gordon Anderson, and Patrick Stahlberg for their contributions to the project. 
