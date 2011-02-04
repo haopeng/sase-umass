@@ -3,6 +3,10 @@
 =Introduction of SASE1.0=
 SASE1.0 is a stream processing system, aka a CEP system. It supports complex query patterns and different selection strategies. The performance can achieve a high throughput.
 
+=History=
+SASE is an academic system for research on stream processing. It was first used for the [http://sase-umass.googlecode.com/files/sase-sigmod2006.pdf SIMGOD2006] publication. After that, it evolved as our research went further.
+This code of the SASE system is totally rewritten in 2010. Comparing to the system we used for our previous publications, this SASE1.0 has a clearer architecture. Some data structures and algorithms are different and improved.
+
 =Technologies=
 
 ==Major Components==
@@ -21,8 +25,7 @@ In SASE1.0, we support the following selection strategies:
 
 For the details of the selection strategies, please read our [http://sase-umass.googlecode.com/files/sase-sigmod08.pdf SIGMOD2008 paper].
 
-=Notes=
-This code of the SASE system is totally rewritten in 2010. Comparing to the system we used for our previous publications, this SASE1.0 has a clearer architecture. Some data structures and algorithms are different and improved.
+
 =Project Background=
 Today high-volume event streams naturally exist in a variety of environments including sensing devices, financial services, network monitors, etc. An increasing number of applications require that useful information be extracted from such event streams in a timely manner. Such translation from event streams to useful, actionable information is realized by a new processing paradigm called complex event processing.
 
