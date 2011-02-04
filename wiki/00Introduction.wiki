@@ -1,3 +1,4 @@
+#labels introduction
 #Overview of this project.
 
 
@@ -33,4 +34,4 @@ In Sase1.0, we support the following selection strategies:
   * Partition Congituigy
   * Skip Till Next Match
 
-For the details of the selection strategies, please read our Sigmod'08 paper.
+For the details of the selection strategies, please read our [http://sase-umass.googlecode.com/files/sase-sigmod08.pdf Sigmod2008 paper].
