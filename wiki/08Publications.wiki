@@ -5,8 +5,8 @@
 Publications
 
   * Haopeng Zhang, Yanlei Diao, and Neil Immerman. Recognizing Patterns in Streams with Imprecise Timestamps.In Proceedings of VLDB 2010. ([http://sase-umass.googlecode.com/files/sase-vldb10.pdf pdf])
-  * Jagrati Agrawal, Yanlei Diao, Daniel Gyllstrom, and Neil Immerman. Efficient Pattern Matching over Event Streams. In Proceedings of SIGMOD 2008. (pdf) 
-  * Daniel Gyllstrom, Jagrati Agrawal, Yanlei Diao, and Neil Immerman. On Supporting Kleene Closure over Event Streams. In Proceedings of ICDE 2008. (pdf)
+  * Jagrati Agrawal, Yanlei Diao, Daniel Gyllstrom, and Neil Immerman. Efficient Pattern Matching over Event Streams. In Proceedings of SIGMOD 2008. ([http://sase-umass.googlecode.com/files/sase-sigmod08.pdf pdf]) 
+  * Daniel Gyllstrom, Jagrati Agrawal, Yanlei Diao, and Neil Immerman. On Supporting Kleene Closure over Event Streams. In Proceedings of ICDE 2008. ([http://sase-umass.googlecode.com/files/sase-icde08.pdf pdf])
   * Yanlei Diao, Neil Immerman, and Daniel Gyllstrom. SASE+: An Agile Language for Kleene Closure over Event Streams. UMass Technical Report. (pdf)
   * Daniel Gyllstrom, Eugene Wu, Hee-Jin Chae, Yanlei Diao, Patrick Stahlberg, and Gordon Anderson. SASE: Complex Event Processing over Streams. In Proceedings of the Third Biennial Conference on Innovative Data Systems Research (CIDR 2007) , Asilomar, CA, January 2007. Demo proposal. ([http://sase-umass.googlecode.com/files/sase-demo-cidr2007.pdf pdf]) 
   * Eugene Wu, Yanlei Diao, and Shariq Rizvi. High-Performance Complex Event Processing over Streams. In Proceedings of SIGMOD2006, June 2006. (pdf) 
