@@ -5,6 +5,8 @@
 
  * Install the Java Runtime Environment version 1.5.x or later
 
+We have tested the SASE system on UNIX, Mac OS X and Windows.
+
 
 = Details =
 
