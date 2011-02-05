@@ -3,7 +3,7 @@
 
 Since we developed SASE using Java, so a Java Runtime Environment is a pre-requisite. The engine also uses other libraries which are included in the SASE 1.0 package. We have tested the SASE system on UNIX, Mac OS X and Windows.
 
-=Structure=
+=Structure of the SASE 1.0 Package=
 The structure of the SASE 1.0 package is as following.
 
  
@@ -19,9 +19,9 @@ The structure of the SASE 1.0 package is as following.
 
 
  
-= Requirement =
+= Software Requirement =
 
- * Install the Java Runtime Environment version 1.5.x or later
+ * Install the [http://www.oracle.com/technetwork/java/javase/downloads/index.html Java Runtime Environment] version 1.5.x or later
 
 
 
