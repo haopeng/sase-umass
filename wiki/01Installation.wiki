@@ -6,7 +6,7 @@ Since we developed SASE using Java, so a Java Runtime Environment is a pre-requi
 =Structure=
 The structure of the SASE 1.0 package is as following.
   * *COPYRIGHT* lists the license under which this package has been released.
-  * *INSTALL* is a quick installation guide.
+  * *INSTALL*       is a quick installation guide.
   * *bin/* contains the complied classes.
   * *doc/* contains the Java doc.
   * *lib/* contains the required libraries.
@@ -15,10 +15,10 @@ The structure of the SASE 1.0 package is as following.
   * *src/* contains the Java source files
  
 
- || *COPYRIGHT*  || lists the license under which this package has been released.||
- || *INSTALL* || is a quick installation guide.||
- || *bin/* || contains the complied classes. ||
- || *doc/* || contains the Java doc.||
+|| *COPYRIGHT*  || lists the license under which this package has been released.||
+|| *INSTALL*        || is a quick installation guide.||
+|| *bin/* || contains the complied classes. ||
+|| *doc/* || contains the Java doc.||
 ||*lib/* || contains the required libraries.||
 || *query/*|| contains the sample query files.||
 ||*scripts/*|| contains the sample script files.||
