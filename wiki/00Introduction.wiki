@@ -1,7 +1,7 @@
 #labels introduction
 #Overview of this project.
-=Introduction of SASE1.0=
-SASE1.0 is a stream processing system, aka a CEP system. It supports complex query patterns and different selection strategies. The performance can achieve a high throughput.
+=Introduction of SASE=
+SASE is a stream processing system, aka a CEP system. It supports complex query patterns and different selection strategies. The performance can achieve a high throughput.
 
 =History=
 SASE is an academic system for research on stream processing. It was used for our experiments in our [http://code.google.com/p/sase-umass/wiki/08Publications publications]. 
