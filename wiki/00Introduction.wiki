@@ -4,7 +4,7 @@
 SASE1.0 is a stream processing system, aka a CEP system. It supports complex query patterns and different selection strategies. The performance can achieve a high throughput.
 
 =History=
-SASE is an academic system for research on stream processing. It was first used for the [http://sase-umass.googlecode.com/files/sase-sigmod2006.pdf SIMGOD2006] publication. After that, it evolved as our research went further.
+SASE is an academic system for research on stream processing. It was used for our experiments in our [http://code.google.com/p/sase-umass/wiki/08Publications publications]. the [http://sase-umass.googlecode.com/files/sase-sigmod2006.pdf SIMGOD2006] publication. After that, it evolved as our research went further.
 This code of the SASE system is totally rewritten in 2010. Comparing to the system we used for our previous publications, this SASE1.0 has a clearer architecture. Some data structures and algorithms are different and improved.
 
 =Technologies=
