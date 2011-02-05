@@ -18,14 +18,6 @@ In the package of Sase1.0, we include the following items:
   * NFA Parser: reads in NFA files in a predefined format
   * Query Evaluation Engine: evaluates streams against given queries
 
-==Selection Strategies=
-In SASE1.0, we support the following selection strategies:
-
-  * Partition Congituigy
-  * Skip Till Next Match
-
-For the details of the selection strategies, please read our [http://sase-umass.googlecode.com/files/sase-sigmod08.pdf SIGMOD2008 paper].
-
 
 =Project Background=
 Today high-volume event streams naturally exist in a variety of environments including sensing devices, financial services, network monitors, etc. An increasing number of applications require that useful information be extracted from such event streams in a timely manner. Such translation from event streams to useful, actionable information is realized by a new processing paradigm called complex event processing.
