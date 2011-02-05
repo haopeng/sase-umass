@@ -2,22 +2,12 @@
 =Introduction of SASE Release=
 In this release, we include the stream processing engine of the SASE system developed at the University of Massachusetts Amherst. This stream engine provides fast matching of stream events against complex queries. 
 
-
-
 The release of SASE 1.0 only contains the stream processing engine of the SASE system. More advanced features such as processing streams with imprecise timestamps are not included in this release.
-
-=History=
-
-
-SASE is a stream processing system, aka a CEP system. It supports complex query patterns and different selection strategies. The performance can achieve a high throughput.
-SASE is an academic system for research on stream processing. It was used for our experiments in our [http://code.google.com/p/sase-umass/wiki/08Publications publications]. 
-
-For this code release, the SASE system is totally rewritten. Comparing to the system we used for our previous publications, this SASE1.0 has a clearer architecture and an optimized engine. We removed some features mentioned in our publications, which may be added in future updates. 
 
 =Technologies=
 
 ==Major Components==
-In the package of Sase1.0, we include the following items:
+In the package of SASE 1.0, we include the following items:
 
   * Command Line User Interface
   * Stream Generator: generates synthetic data for academic experiments
