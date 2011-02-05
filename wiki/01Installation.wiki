@@ -1,11 +1,24 @@
 #labels install
 #This page tells how to install sase on your machine.
 
+Since we developed SASE using Java, so a Java Runtime Environment is a pre-requisite. The engine also uses other libraries which are included in the SASE 1.0 package. We have tested the SASE system on UNIX, Mac OS X and Windows.
+
+=Structure=
+The structure of the SASE 1.0 package is as following.
+  * COPYRIGHT lists the license under which this package has been released.
+  * INSTALL is a quick installation guide.
+  * bin/ contains the complied classes.
+  * doc/ contains the Java doc.
+  * lib/ contains the required libraries.
+  * query/ contains the sample query files.
+  * scripts/ contains the sample script files.
+  * src/ contains the Java source files
+ 
 = Requirement =
 
  * Install the Java Runtime Environment version 1.5.x or later
 
-We have tested the SASE system on UNIX, Mac OS X and Windows.
+
 
 
 = Details =
