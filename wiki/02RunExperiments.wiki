@@ -1,4 +1,22 @@
 #This page tells how to run the engine .
+The SASE1.0 can be used by a command-line mode.
+
+= Command =
+java edu.umass.cs.sase.UI.CommandLineUI Query_File Stream_File Print_Result_Flag
+
+||Query_File|| specifies the location of the query file ||
+||Stream_File|| specifies the location of the stream file ||
+||Print_Result_Flag|| specifies whether or not to print the details of the result. 1 for print, 0 for not print||
+
+===Example===
+
+
+java  edu.umass.cs.sase.UI.CommandLineUI $SASE_HOME/query/performance/sigmod06/DomainSize/domainsize.query $SASE_HOME/query/performance/sigmod06/DomainSize/domainsize100.stream 0  
+
+===Explanation===
+  * *edu.umass.cs.sase.UI.CommandLineUI*, the main class
+  * *$HOME/sase-publish/query/performance/sigmod06/DomainSize/domainsize.query*, the location of the query file
+  * *$HOME/sase-publish/query/performance/sigmod06/DomainSize/domainsize100.stream *, the location of the stream configuration file
 
 = Stream =
 ==In Class ==
@@ -26,14 +44,3 @@ end
 
 = Query =
 We provide a bunch of example queries, you can find them in path: /sase-publish/query
-
-= Commands =
-===Example===
-
-
-java -Xms100m -Xmx3000m edu.umass.cs.sase.UI.CommandLineUI $HOME/sase-publish/query/performance/sigmod06/DomainSize/domainsize.query $HOME/sase-publish/query/performance/sigmod06/DomainSize/domainsize100.stream 0  >>06results/ds100.result
-
-===Explanation===
-  * *edu.umass.cs.sase.UI.CommandLineUI*, the main class
-  * *$HOME/sase-publish/query/performance/sigmod06/DomainSize/domainsize.query*, the location of the query file
-  * *$HOME/sase-publish/query/performance/sigmod06/DomainSize/domainsize100.stream *, the location of the stream configuration file
