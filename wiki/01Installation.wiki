@@ -11,6 +11,7 @@ The structure of the SASE 1.0 package is as following.
 || *COPYRIGHT*  || lists the license under which this package has been released.||
 || *INSTALL*        || is a quick installation guide.||
 || *bin/* || contains the complied classes. ||
+|| *build/*|| contains the JAR file
 || *doc/* || contains the Java doc.||
 ||*lib/* || contains the required libraries.||
 || *query/*|| contains the sample query files.||
@@ -26,9 +27,12 @@ The structure of the SASE 1.0 package is as following.
 
 
 
-= Details =
+= Configuration =
 
- * Download the SASE package and extract it to a suitable directory.
- * Set the SASE_HOME environment variable to point to the SASE installation directory.
- * Add $SASE_HOME/bin to the PATH to access all the executables.
- * Add $SASE_HOME/lib/jeval.jar to the CLASSPATH.
+  * Download the [link SASE1.0] package and extract it to a suitable directory.
+  * Set the SASE_HOME environment variable to point to the SASE installation directory.
+  * Add $SASE_HOME/bin to the PATH to access all the executables.
+  * Add $SASE_HOME/lib/jeval.jar to the CLASSPATH.
+  * Add $SASE_HOME/build/sase.jar to the CLASSPATH
+
+At this point, you are ready to use SASE by using these [http://code.google.com/p/sase-umass/wiki/02RunExperiments commands].
