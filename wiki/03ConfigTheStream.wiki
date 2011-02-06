@@ -21,3 +21,5 @@ The stream can also be configured by an input file describing the stream specs.
  increaseProbability = 70
  end
 }}}
+
+You can find more examples in the SASE 1.0 package under query/ folder. All query files use the extension *.stream*.
