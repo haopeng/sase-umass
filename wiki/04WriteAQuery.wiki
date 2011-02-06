@@ -1,7 +1,14 @@
 #labels query
 #This page tells you how to write a query.
 
+The SASE 1.0 uses a query file to describe a query. A query file consists of two parts: header information and states.
 
+=Header=
+In header information part, we have several parameters:
+||selectionStrategy|| specifies the selection strategy for the query, in SASE 1.0, you can choose "skip-till-ext-match" or "partition-contiguity"||
+||timeWindow || specifies the size of time window||
+||partition attribute || optional, you can specify an attribute as the partition attribute||
+==
 
 
 = Sample =
