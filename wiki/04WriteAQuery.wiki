@@ -1,4 +1,4 @@
-#labels Phase-Deploy
+#labels query
 #This page tells you how to write a query.
 
 
