@@ -1,8 +1,0 @@
-#Specifies some key points on how to change the codes.
-
-=Stream=
-You can customize a class from Event.
-
-
-=Engine=
-You can override the runEngine() method in Engine.
