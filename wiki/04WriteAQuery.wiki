@@ -16,7 +16,12 @@ A query can be represented by an NFA. In the State part, we describe the states 
 ||type|| specifies the type of this state, "normal" or "kleeneClosure"||
 ||eventtype|| specifies the event type which satisfies this state||
 
-For each state, we can describe the edge(s), and each edge can be separated by "|"
+We use an "&" to connect the parameters.
+
+After providing the basic information for this state,  we can describe the edge(s), and each edge can be separated by "|". An edge contains the edgetype and predicate(s).
+
+||edgetype|| specifies the type of an edge, "begin" or "proceed"||
+||predicate|| specifies the requirement for this state. If you want to use an equation, please use "==" instead of "=", e.g., "price == 10".||
 
 = Sample =
 {{{
