@@ -16,13 +16,3 @@ java  edu.umass.cs.sase.UI.CommandLineUI $SASE_HOME/query/performance/sigmod06/D
 
   * [http://code.google.com/p/sase-umass/wiki/04WriteAQuery How to write a query file]
   * [http://code.google.com/p/sase-umass/wiki/03ConfigTheStream How to write a stream file]
-
-= Stream =
-==In Class ==
-The stream can be configured in the class DebugUI.
-
-==Config File==
-
-
-= Query =
-We provide a bunch of example queries, you can find them in path: /sase-publish/query
