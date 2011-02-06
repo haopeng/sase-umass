@@ -8,8 +8,12 @@ In header information part, we have several parameters:
 ||selectionStrategy|| specifies the selection strategy for the query, in SASE 1.0, you can choose "skip-till-ext-match" or "partition-contiguity"||
 ||timeWindow || specifies the size of time window||
 ||partition attribute || optional, you can specify an attribute as the partition attribute||
-==
+=State=
+A query can be represented by an NFA. In the State part, we describe the states of the NFA. For each NFA state, we use one line to describe it. In each line, we have multiple parameters as following:
 
+||State|| assigns a number for this state||
+||type|| specifies the type of this state, "normal" or "kleeneClosure"||
+||eventtype|| specifies the event type which satisfies this state||
 
 = Sample =
 {{{
