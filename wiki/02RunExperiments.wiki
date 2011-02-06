@@ -2,11 +2,11 @@
 The SASE1.0 can be used by a command-line mode.
 
 = Command =
-java edu.umass.cs.sase.UI.CommandLineUI Query_File Stream_File Print_Result_Flag
+java edu.umass.cs.sase.UI.CommandLineUI  Query_File Stream_File  Print_Result_Flag
 
-||Query_File|| specifies the location of the query file ||
-||Stream_File|| specifies the location of the stream file ||
-||Print_Result_Flag|| specifies whether or not to print the details of the result. 1 for print, 0 for not print||
+|| Query_File || specifies the location of the query file ||
+|| Stream_File || specifies the location of the stream file ||
+|| Print_Result_Flag || specifies whether or not to print the details of the result. 1 for print, 0 for not print||
 
 ===Example===
 
