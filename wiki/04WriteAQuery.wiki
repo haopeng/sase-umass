@@ -22,3 +22,5 @@ end
 The first line is the config line, describing the selection strategy, the time window and the partiton attribute if any.
 
 The following lines except the last represent states, and each line corresponds to one state.
+
+You can find more examples in SASE 1.0 package under query/ folder. All query files use extension *.query*.
