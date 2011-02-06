@@ -42,3 +42,14 @@ ID = 33171	Timestamp = 33171	Symbol = 1	Price = 18012	Volume = 73
 
 
 }}}
+
+Whether or not you choose to print the details of the results, the system will output the profiling numbers like this:
+{{{
+**************Profiling Numbers*****************
+Total Running Time: 571591000 nanoseconds
+Number Of Events Processed: 100000
+Number Of Runs Created: 203
+Number Of Matches Found: 70
+Throughput: 174950 events/second
+
+}}}
