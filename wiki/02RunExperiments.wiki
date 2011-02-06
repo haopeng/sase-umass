@@ -6,7 +6,7 @@ java edu.umass.cs.sase.UI.CommandLineUI  Query_File Stream_File  Print_Result_Fl
 
 || Query_File || specifies the location of the query file ||
 || Stream_File || specifies the location of the stream file ||
-|| Print_Result_Flag || specifies whether or not to print the details of the result. 1 for print, 0 for not print||
+|| Print_Result_Flag || specifies whether or not to print the details of the result in the console. 1 for print, 0 for not print||
 
 ===Example===
 
@@ -16,3 +16,29 @@ java  edu.umass.cs.sase.UI.CommandLineUI $SASE_HOME/query/performance/sigmod06/D
 
   * [http://code.google.com/p/sase-umass/wiki/04WriteAQuery How to write a query file]
   * [http://code.google.com/p/sase-umass/wiki/03ConfigTheStream How to write a stream file]
+
+=Result=
+If you choose to print results, you can see the chosen events for each match. The match looks like this:
+{{{
+----------Here is the No.20 match----------
+
+This match has selected the following events: 
+
+ID = 29535	Timestamp = 29535	Symbol = 1	Price = 16000	Volume = 678
+ID = 29536	Timestamp = 29536	Symbol = 1	Price = 16001	Volume = 185
+ID = 29538	Timestamp = 29538	Symbol = 1	Price = 16001	Volume = 126
+
+----------Here is the No.21 match----------
+
+This match has selected the following events: 
+
+ID = 33164	Timestamp = 33164	Symbol = 1	Price = 18000	Volume = 863
+ID = 33165	Timestamp = 33165	Symbol = 1	Price = 18003	Volume = 464
+ID = 33166	Timestamp = 33166	Symbol = 1	Price = 18005	Volume = 612
+ID = 33167	Timestamp = 33167	Symbol = 1	Price = 18007	Volume = 543
+ID = 33168	Timestamp = 33168	Symbol = 1	Price = 18008	Volume = 515
+ID = 33169	Timestamp = 33169	Symbol = 1	Price = 18011	Volume = 709
+ID = 33171	Timestamp = 33171	Symbol = 1	Price = 18012	Volume = 73
+
+
+}}}
