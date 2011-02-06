@@ -1,5 +1,27 @@
 #This page tells you how to configurate the stream.
 
+In SASE1.0, if you want to use the default simulated stock stream, you can use a stream file to configurate the stream. There are several parameters you can change:
+
+|| *streamSize*|| specifies the number of events in the input stream 
+|| *maxPrice*|| specifies the maximum value for the attribute "Price"
+|| *maxSymbol*|| specifies the maximum value for the attribute "Symbol"
+|| *maxVolume*|| specifies the maximum value for the attribute "Volume"
+|| *randomSeed*|| the seed for random number generator
+|| *increaseProbability*|| specifies the probability that the price increases
+|| *end*|| specifies the end of the input file
+
+The stream can also be configured by an input file describing the stream specs.
+===Example===
+streamSize = 100000
+maxPrice = 1000
+maxSymbol = 2
+maxVolume = 1000
+randomSeed = 10
+increaseProbability = 70
+end
+
+===Explanation===
+
 =Sample =
 streamSize = 10000
 
