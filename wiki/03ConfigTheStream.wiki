@@ -12,6 +12,7 @@ In SASE1.0, if you want to use the default simulated stock stream, you can use a
 
 The stream can also be configured by an input file describing the stream specs.
 ===Example===
+{{{
  streamSize = 100000
  maxPrice = 1000
  maxSymbol = 2
@@ -19,3 +20,4 @@ The stream can also be configured by an input file describing the stream specs.
  randomSeed = 10
  increaseProbability = 70
  end
+}}}
