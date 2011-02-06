@@ -13,10 +13,9 @@ In header information part, we have several parameters:
 
 = Sample =
 {{{
-selectionStrategy = skip-till-next-match | timeWindow = 10000  | partitionAttribute = price
-State=1 & type = normal & eventtype = stock1 | edgetype = begin 
-State=2 & type = normal & eventtype = stock2 | edgetype = begin 
-State=3 & type = normal & eventtype = stock3 | edgetype = begin 
+SelectionStrategy = partition-contiguity | TimeWindow = 500 | partitionAttribute = symbol
+State=1 & type = kleeneClosure & eventtype = stock | edgetype = begin  & price % 500 == 0 | edgetype = take | edgetype = proceed 
+State=2 & type = normal & eventtype = stock | edgetype = begin & volume < 150
 end
 }}}
 
