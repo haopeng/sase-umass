@@ -16,6 +16,8 @@ A query can be represented by an NFA. In the State part, we describe the states 
 ||type|| specifies the type of this state, "normal" or "kleeneClosure"||
 ||eventtype|| specifies the event type which satisfies this state||
 
+For each state, we can describe the edge(s), and each edge can be separated by "|"
+
 = Sample =
 {{{
 SelectionStrategy = partition-contiguity | TimeWindow = 500 | partitionAttribute = symbol
@@ -27,3 +29,6 @@ end
 
 
 You can find more examples in SASE 1.0 package under query/ folder. All query files use extension *.query*.
+
+=Notes=
+ * If you want to use an equation, please use "==" instead of "=", e.g., "price == 10".
