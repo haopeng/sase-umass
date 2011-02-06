@@ -20,7 +20,7 @@ We use an "&" to connect the parameters.
 
 After providing the basic information for this state,  we can describe the edge(s), and each edge can be separated by "|". An edge contains the edgetype and predicate(s).
 
-||edgetype|| specifies the type of an edge, "begin" or "proceed"||
+||edgetype|| specifies the type of an edge, "begin" , "take" or "proceed"||
 ||predicate|| specifies the requirement for this state. If you want to use an equation, please use "==" instead of "=", e.g., "price == 10".||
 
 = Sample =
@@ -34,6 +34,3 @@ end
 
 
 You can find more examples in SASE 1.0 package under query/ folder. All query files use extension *.query*.
-
-=Notes=
- * If you want to use an equation, please use "==" instead of "=", e.g., "price == 10".
