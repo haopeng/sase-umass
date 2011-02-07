@@ -11,7 +11,7 @@ java -jar sase.jar  Query_File Stream_File  Print_Result_Flag
 ===Example===
 
 
-java  edu.umass.cs.sase.UI.CommandLineUI $SASE_HOME/query/performance/sigmod06/DomainSize/domainsize.query $SASE_HOME/query/performance/sigmod06/DomainSize/domainsize100.stream 0  
+java -jar sase.jar domainsize.query domainsize100.stream 0  
 
 
   * [http://code.google.com/p/sase-umass/wiki/04WriteAQuery How to write a query file]
