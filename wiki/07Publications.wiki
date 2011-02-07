@@ -2,7 +2,6 @@
 #.Publications of this project
 
 = Publications =
-Publications
 
   * Haopeng Zhang, Yanlei Diao, and Neil Immerman. Recognizing Patterns in Streams with Imprecise Timestamps.In Proceedings of VLDB 2010. ([http://sase-umass.googlecode.com/files/sase-vldb10.pdf pdf])
   * Jagrati Agrawal, Yanlei Diao, Daniel Gyllstrom, and Neil Immerman. Efficient Pattern Matching over Event Streams. In Proceedings of SIGMOD 2008. ([http://sase-umass.googlecode.com/files/sase-sigmod08.pdf pdf]) 
