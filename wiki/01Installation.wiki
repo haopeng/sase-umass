@@ -25,16 +25,6 @@ The structure of the SASE 1.0 package is as following.
  * Install the [http://www.oracle.com/technetwork/java/javase/downloads/index.html Java Runtime Environment] version 1.5.x or later
 
 
-
-
-= Configuration =
-
-  * Download the [link SASE1.0] package and extract it to a suitable directory.
-  * Set the SASE_HOME environment variable to point to the SASE installation directory.
-  * Add $SASE_HOME/bin to the PATH to access all the executables.
-  * Add $SASE_HOME/lib/jeval.jar to the CLASSPATH.
-  * Add $SASE_HOME/build/sase.jar to the CLASSPATH
-
-At this point, you are ready to use SASE by using these [http://code.google.com/p/sase-umass/wiki/02RunExperiments commands].
+Then you are ready to use SASE by using these [http://code.google.com/p/sase-umass/wiki/02RunExperiments commands].
 
 If you make changes to the source code, a *Makefile* is provided for re-compiling the classes. In this case, please modify your *CLASSPATH* to use the newly compiled classes.
