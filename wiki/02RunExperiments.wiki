@@ -2,8 +2,13 @@
 The SASE1.0 can be used by a command-line mode.
 
 = Command =
+If you want to test the engine, simply use the following command:
+{{{
+java -jar sase.jar
+}}}
+This will use the "test.query" and "test.stream", which are in the *build/* foler.
 
-If you directly execute the sase.jar file, the command should be in this format:
+If you want to designate the query file and the stream file using *sase.jar*, the command should be in this format:
 {{{ 
 java -jar sase.jar  Query_File Stream_File  Print_Result_Flag
 }}}
