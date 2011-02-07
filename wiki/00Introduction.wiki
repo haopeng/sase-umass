@@ -4,9 +4,7 @@ In this release, we include the stream processing engine of the SASE system deve
 
 The release of SASE 1.0 only contains the stream processing engine of the SASE system. More advanced features such as processing streams with imprecise timestamps are not included in this release.
 
-=Technologies=
-
-==Major Components==
+=Major Components=
 In the package of SASE 1.0, we include the following items:
 
   * Command Line User Interface
