@@ -28,4 +28,4 @@ You can find more examples in the SASE 1.0 package under query/ folder. All quer
 =Customized stream=
 If you want to use your own customized stream, you need to follow these steps.
   # Implement the interface *edu.umass.cs.sase.stream.Event*
-  # 
+  # In class *edu.umass.cs.sase.stream.StreamController*, add a method to import  or generate your stream, wrapping each event using your own Event class implemented in Step1. *edu.umass.cs.sase.stream.StreamController.generateStockEventsAsConfig()* is a sample method.
