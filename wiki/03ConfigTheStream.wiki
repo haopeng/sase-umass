@@ -1,5 +1,6 @@
 #This page tells you how to configurate the stream.
 
+=Simulated stock stream=
 In SASE1.0, if you want to use the default simulated stock stream, you can use a stream file to configurate the stream. There are several parameters you can change:
 
 || *streamSize*|| specifies the number of events in the input stream ||
@@ -11,7 +12,7 @@ In SASE1.0, if you want to use the default simulated stock stream, you can use a
 || *end*|| specifies the end of the input file||
 
 The stream can also be configured by an input file describing the stream specs.
-===Example===
+==Example==
 {{{
  streamSize = 100000
  maxPrice = 1000
@@ -23,3 +24,5 @@ The stream can also be configured by an input file describing the stream specs.
 }}}
 
 You can find more examples in the SASE 1.0 package under query/ folder. All query files use the extension *.stream*.
+
+=Customized stream=
