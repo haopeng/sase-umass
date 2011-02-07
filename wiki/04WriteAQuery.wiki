@@ -32,5 +32,4 @@ end
 }}}
 
 
-
 You can find more examples in SASE 1.0 package under query/ folder. All query files use extension *.query*.
