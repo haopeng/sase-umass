@@ -1,6 +1,6 @@
 #labels introduction
 =Introduction of SASE Release=
-In this release, we include the stream processing engine of the SASE system developed at the University of Massachusetts Amherst. This stream engine provides fast matching of stream events against complex queries.  A detailed format of queries supported is provided in[http://code.google.com/p/sase-umass/wiki/04WriteAQuery this page]. This engine is implemented in the Java language, using J2SE 5.0.
+In this release, we include the stream processing engine of the SASE system developed at the University of Massachusetts Amherst. This stream engine provides fast matching of stream events against complex queries.  A detailed format of queries supported is provided in [http://code.google.com/p/sase-umass/wiki/04WriteAQuery this page]. This engine is implemented in the Java language, using J2SE 5.0.
 
 The release of SASE 1.0 only contains the stream processing engine of the SASE system. More advanced features such as processing streams with imprecise timestamps are not included in this release.
 
