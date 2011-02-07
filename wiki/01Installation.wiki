@@ -19,7 +19,6 @@ The structure of the SASE 1.0 package is as following.
 || *src/*|| contains the Java source files||
 
 
- 
 = Software Requirement =
 
  * Install the [http://www.oracle.com/technetwork/java/javase/downloads/index.html Java Runtime Environment] version 1.5.x or later
