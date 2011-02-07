@@ -26,3 +26,6 @@ The stream can also be configured by an input file describing the stream specs.
 You can find more examples in the SASE 1.0 package under query/ folder. All query files use the extension *.stream*.
 
 =Customized stream=
+If you want to use your own customized stream, you need to follow these steps.
+  # Implement the interface *edu.umass.cs.sase.stream.Event*
+  # 
