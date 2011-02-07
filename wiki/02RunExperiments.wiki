@@ -2,13 +2,13 @@
 The SASE1.0 can be used by a command-line mode.
 
 = Command =
-If you want to test the engine, simply use the following command:
+  # If you want to test the engine, simply use the following command:
 {{{
 java -jar sase.jar
 }}}
 This will use the "test.query" and "test.stream", which are in the *build/* foler.
 
-If you want to designate the query file and the stream file using *sase.jar*, the command should be in this format:
+  # If you want to designate the query file and the stream file using *sase.jar*, the command should be in this format:
 {{{ 
 java -jar sase.jar  Query_File Stream_File  Print_Result_Flag
 }}}
@@ -16,7 +16,7 @@ java -jar sase.jar  Query_File Stream_File  Print_Result_Flag
 || Stream_File || specifies the location of the stream file ||
 || Print_Result_Flag || specifies whether or not to print the details of the result in the console. 1 for print, 0 for not print||
 
-If you make changes to the source code, the Main Class is edu.umass.cs.sase.UI.CommandLineUI.java. 
+  # If you make changes to the source code, the Main Class is edu.umass.cs.sase.UI.CommandLineUI.java. 
 ===Example===
 
 
