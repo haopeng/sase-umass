@@ -1,3 +1,3 @@
-#This page tells the known bugs and limitations of the system.
+#This page allows users to report a bug to the SASE developer.
 
-If you happen to find bugs, please email Haopeng Zhang( haopeng@cs.umasss.edu) or leave comments on this page, we really appreciate your help!
+If you find a bug, please email Haopeng Zhang( haopeng@cs.umasss.edu) or leave a comment on this page, we really appreciate your input!
