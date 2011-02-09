@@ -2,7 +2,7 @@
 
 = Publications =
 
-  * Haopeng Zhang, Yanlei Diao, and Neil Immerman. Recognizing Patterns in Streams with Imprecise Timestamps.In Proceedings of VLDB 2010. ([http://sase-umass.googlecode.com/files/sase-vldb10.pdf pdf])
+  * Haopeng Zhang, Yanlei Diao, and Neil Immerman. *Recognizing Patterns in Streams with Imprecise Timestamps*.In Proceedings of VLDB 2010. ([http://sase-umass.googlecode.com/files/sase-vldb10.pdf pdf])
 
  <font size="2">Abstract:Large-scale event systems are becoming increasingly popular in  a variety of domains. Event pattern evaluation plays a key role in  monitoring applications in these domains. Existing work on pattern evaluation, however, assumes that the occurrence time of each event is known precisely and the events from various sources can be merged into a single stream with a total or partial order. We observe that in real-world applications event occurrence times are often unknown or imprecise. Therefore, we propose a temporal model that assigns a time interval to each event to represent all of its possible occurrence times and revisit pattern evaluation under this model. In particular, we propose the formal semantics of such pattern evaluation, two evaluation frameworks, and algorithms and optimizations in these frameworks. Our evaluation results using both real traces and synthetic systems show that the event-based framework always outperforms the point-based framework and with optimizations, it achieves high efficiency for a wide range of workloads tested. </font>
 
