@@ -18,9 +18,9 @@ java -jar sase.jar  Query_File Stream_File  Print_Result_Flag
 }}}
 
   * If you want to run the engine from other directory, please use the following configuration steps:
-  #Set the SASE_HOME environment variable to point to the SASE 1.0 installation directory.
-  #Add $SASE_HOME/bin to the PATH to access all the executables.
-  #Add $YFILTER_HOME/build/sase.jar to the CLASSPATH.
+  # Set the SASE_HOME environment variable to point to the SASE 1.0 installation directory.
+  # Add $SASE_HOME/bin to the PATH to access all the executables.
+  # Add $YFILTER_HOME/build/sase.jar to the CLASSPATH.
 
 Then you can use the following command from any directory:
 {{{ 
