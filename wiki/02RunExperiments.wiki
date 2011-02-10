@@ -1,14 +1,14 @@
-#labels experiments
-#This page tells how to run the engine .
-The SASE1.0 can be used by a command-line mode.
+#This page explains how to run the engine .
+The SASE1.0 can be run from a command-line.
 
-= Command =
+= Command: running SASE using a command line =
 ==1. Test run==
-If you want to test the engine, simply use the following command:
+
+If you want to test the engine, the work directory is the *build/* folder in this package. Then use the following command:
 {{{
 java -jar sase.jar
 }}}
-This will use the "test.query" and "test.stream", which are in the *build/* foler.
+This will use the "test.query" and "test.stream" in the work directory, which are in the *build/* folder.
 
 ==2. Run with configurations==
 If you want to designate the query file and the stream file using *sase.jar*, the command should be in this format:
