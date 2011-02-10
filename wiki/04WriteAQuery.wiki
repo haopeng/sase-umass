@@ -1,4 +1,3 @@
-#labels query
 #This page tells you how to write a query.
 
 The SASE 1.0 uses a query file to describe a query. A query file consists of two parts: header information and states.
