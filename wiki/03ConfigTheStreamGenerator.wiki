@@ -10,7 +10,7 @@ In SASE1.0, if you want to use the default simulated stock stream, you can use a
 || *randomSeed*|| the seed for random number generator||
 || *increaseProbability*|| specifies the probability that the price increases (%), the probabilities that the price stays the same and decreases are both (100 - probability)/2; for example, if the probability is set to 100, the price will strictly increase; if the probability is set to 60, the probability that the price will increase is 60%, the probability that the price will decrease is 20%, and the probability that the price will stay the same is also 20%.||
 
-The stream can also be configured by an input file describing the stream specs.
+
 ==Example==
 {{{
  streamSize = 100000
