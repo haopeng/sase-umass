@@ -43,10 +43,10 @@ If you want to generate your own data stream or queries, please follow the instr
   * [http://code.google.com/p/sase-umass/wiki/03ConfigTheStream How to write a stream file]
 
 =Script=
-The script files for some experiments are included in the scripts folder. 
-{{{
-Before using these scripts,set the SASE_HOME environment variable to point to the SASE1.0 installation directory.
-}}}
+The script files for some experiments are included in the scripts folder. Before you use these scripts, follow the configuration steps below: 
+
+  * Set the SASE_HOME environment variable to point to the SASE1.0 installation directory.
+
 =Result=
 If you choose to print results, you can see the chosen events for each match. The match looks like this:
 {{{
