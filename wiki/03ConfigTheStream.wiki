@@ -1,4 +1,3 @@
-#labels stream
 #This page tells you how to configurate the stream.
 
 =Simulated stock stream=
