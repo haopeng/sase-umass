@@ -48,7 +48,7 @@ The script files for some experiments are included in the scripts folder. Before
   * Set the SASE_HOME environment variable to point to the SASE1.0 installation directory.
 
 =Result=
-If you choose to print results, you can see the chosen events for each match. The match looks like this:
+If you choose to print results, you can see each pattern match with the relevant events like the following:
 {{{
 ----------Here is the No.20 match----------
 
