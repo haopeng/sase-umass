@@ -2,13 +2,13 @@
 The SASE1.0 can be run from a command-line.
 
 = Command: running SASE using a command line =
+Assuming you unzipped the SASE 1.0 in location "SASE_HOME".
 ==1. Test run==
-
-If you want to test the engine, the work directory is the *build/* folder in this package. Then use the following command:
+The work directory is _SASE_HOME/build_. Then use the following command to test the engine:
 {{{
 java -jar sase.jar
 }}}
-This will use the "test.query" and "test.stream" in the work directory, which are in the *build/* folder.
+This will use the "test.query" and "test.stream" in the work directory.
 
 ==2. Run with configurations==
 If you want to designate the query file and the stream file using *sase.jar*, the command should be in this format:
