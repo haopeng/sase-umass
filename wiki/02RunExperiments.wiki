@@ -11,12 +11,19 @@ java -jar sase.jar
 This will use the "test.query" and "test.stream" in the work directory.
 
 ==2. Run with configurations==
-If you want to designate the query file and the stream file using *sase.jar*, the command should be in this format:
+The engine allows you to designate the query file and the stream file using *sase.jar*
+  * If your work directory is _*/SASE_HOME/build*_, the command should be in this format:
 {{{ 
 java -jar sase.jar  Query_File Stream_File  Print_Result_Flag
 }}}
-|| Query_File || specifies the location of the query file ||
-|| Stream_File || specifies the location of the stream file ||
+
+  * If you want to run the engine from other directory, please add *_*/SASE_HOME/build/sase.jar*_* to your *CLASSPATH* first. Then you can use the above command under any directory. 
+
+
+The meanings of the parameters are explained as follows:
+
+|| Query_File || specifies the location of the query file, which is the full path of the file ||
+|| Stream_File || specifies the location of the stream file, which is the full path of the file ||
 || Print_Result_Flag || specifies whether or not to print the details of the result in the console. 1 for print, 0 for not print||
 
 ==3. Change the code==
