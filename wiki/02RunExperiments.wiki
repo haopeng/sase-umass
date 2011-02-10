@@ -30,7 +30,7 @@ sase  Query_File Stream_File  Print_Result_Flag
 The meanings of the parameters are explained as follows:
 
 || Query_File || specifies the location of the query file, which is the full path of the file ||
-|| Stream_File || specifies the location of the stream file, which is the full path of the file ||
+|| Stream_File || specifies the location of the config file for the stream generator, which is the full path of the file ||
 || Print_Result_Flag || specifies whether or not to print the details of the result in the console. 1 for print, 0 for not print||
 
 ==3. Modify the code==
@@ -40,7 +40,7 @@ If you want to modify the source code, the Main Class is *edu.umass.cs.sase.UI.C
 =Data Stream and Queries=
 If you want to generate your own data stream or queries, please follow the instructions below:
   * [http://code.google.com/p/sase-umass/wiki/04WriteAQuery How to write a query file]
-  * [http://code.google.com/p/sase-umass/wiki/03ConfigTheStream How to write a stream file]
+  * [http://code.google.com/p/sase-umass/wiki/03ConfigTheStream How to write a config file for the stream generator]
 
 =Script=
 The script files for some experiments are included in the scripts folder. Before you use these scripts, follow the configuration steps below: 
