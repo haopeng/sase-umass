@@ -1,13 +1,13 @@
-#This page explains how to install sase on your machine.
+#This page explains how to install SASE 1.0 on your machine.
 
-Since we developed SASE using Java, so a Java Runtime Environment is a pre-requisite. The engine also uses other libraries which are included in the [http://sase-umass.googlecode.com/files/sase1.0.zip SASE 1.0 package]. We have tested the SASE system on UNIX, Mac OS X and Windows.
+Since we developed SASE using Java, a Java Runtime Environment must be installed. The engine also uses libraries which are included in the [http://sase-umass.googlecode.com/files/sase1.0.zip SASE 1.0 package]. We have tested the SASE system on UNIX, Mac OS X and Windows.
 
 =Structure of the SASE 1.0 Package=
-The structure of the SASE 1.0 package is as following.
+The structure of the SASE 1.0 package is as follows.
 
  
 
-|| *COPYRIGHT*  || lists the license under which this package has been released.||
+|| *COPYRIGHT*  || lists the license under which this package is released.||
 || *INSTALL*        || is a quick installation guide.||
 || *bin/* || contains the complied classes. ||
 || *build/*|| contains the JAR file.||
@@ -24,4 +24,4 @@ The structure of the SASE 1.0 package is as following.
 
 Next you can run the *sase.jar* under the *build/* folder by these [http://code.google.com/p/sase-umass/wiki/02RunExperiments commands].
 
-If you make changes to the source code, the *Main Class* is *edu.umass.cs.sase.UI.CommandLineUI.java*.
+If you want to modify the source code, the *Main Class* is *edu.umass.cs.sase.UI.CommandLineUI.java*.
