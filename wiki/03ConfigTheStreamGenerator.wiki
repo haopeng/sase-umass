@@ -4,7 +4,7 @@
 In SASE1.0, if you want to use the default simulated stock stream, you can use a stream file to configure the stream generator. There are several parameters you can modify:
 
 || *streamSize*|| specifies the number of events in the input stream ||
-|| *maxPrice*|| specifies the maximum value for the attribute "Price", the value of "Price" would be uniformly distributed on integers in [1, maxPrice]||
+|| *maxPrice*|| specifies the maximum value for the attribute "Price", the value of "Price" would be uniformly distributed on integers in \[1, maxPrice]||
 || *numOfSymbol*|| specifies the number of possible values for the attribute "Symbol", the value of "Symbol" would be uniformly distributed on integers in [1, numOfSymbol]||
 || *maxVolume*|| specifies the maximum value for the attribute "Volume", the value of "Volume" would be uniformly distributed on integers in [1, maxVolume]||
 || *randomSeed*|| the seed for random number generator||
