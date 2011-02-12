@@ -1,7 +1,7 @@
 #This page explains how to run the engine .
 The SASE1.0 can be run from a command-line.
 
-= Command: running SASE using a command line =
+= Running SASE Using a Command Line =
 
 ==1. Test run==
 The work directory is _*$SASE_HOME/build*_. Then use the following command to test the engine:
@@ -26,15 +26,17 @@ The meanings of the parameters are explained as follows:
 If you want to modify the source code, the Main Class is *edu.umass.cs.sase.UI.CommandLineUI.java*.
 
 
+
+
+=Running SASE Using a Script=
+The *examples* folder and the *tests* folder in the SASE 1.0 package include the scripts for running a set of experiments.
+
 =Data Stream and Queries=
 If you want to generate your own data stream or queries, please follow the instructions below:
   * [http://code.google.com/p/sase-umass/wiki/04WriteAQuery How to write a query file]
   * [http://code.google.com/p/sase-umass/wiki/03ConfigTheStreamGenerator How to write a config file for the stream generator]
 
-=Script=
-The *examples* folder and the *tests* folder in the SASE 1.0 package include the scripts for running a set of experiments.
-
-=Result=
+=Results=
 If you choose to print results, you can see each pattern match with the relevant events like the following:
 {{{
 ----------Here is the No.20 match----------
