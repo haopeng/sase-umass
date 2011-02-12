@@ -72,3 +72,5 @@ Number Of Matches Found: 70
 Throughput: 174950 events/second
 
 }}}
+
+We include the test results for each experiment under the *examples* folder and the *tests* folder. Due to the difference of machine configuration, the profiling numbers might be different.
