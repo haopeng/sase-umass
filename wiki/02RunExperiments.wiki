@@ -6,23 +6,12 @@ Assuming you unzipped the SASE 1.0 in location _*/SASE_HOME*_.
 ==1. Test run==
 The work directory is _*/SASE_HOME/build*_. Then use the following command to test the engine:
 {{{
-java -jar sase.jar
+sase
 }}}
 This will use the "test.query" and "test.stream" in the work directory.
 
 ==2. Run with configurations==
-The engine allows you to designate the query file and the stream file using *sase.jar*
-  * If your work directory is _*/SASE_HOME/build*_, the command should be in this format:
-{{{ 
-java -jar sase.jar  Query_File Stream_File  Print_Result_Flag
-}}}
-
-  * If you want to run the engine from other directory, please use the following configuration steps:
-  # Set the SASE_HOME environment variable to point to the SASE 1.0 installation directory.
-  # Add $SASE_HOME/bin to the PATH to access all the executables.
-  # Add $YFILTER_HOME/build/sase.jar to the CLASSPATH.
-
-Then you can use the following command from any directory:
+The engine allows you to designate the query file and the stream file, and you can run the engine under any directory using the following command:
 {{{ 
 sase  Query_File Stream_File  Print_Result_Flag
 }}} 
@@ -43,9 +32,7 @@ If you want to generate your own data stream or queries, please follow the instr
   * [http://code.google.com/p/sase-umass/wiki/03ConfigTheStream How to write a config file for the stream generator]
 
 =Script=
-The script files for some experiments are included in the scripts folder. Before you use these scripts, follow the configuration steps below: 
-
-  * Set the SASE_HOME environment variable to point to the SASE1.0 installation directory.
+The script files for some experiments are included in the *examples* folder and the *tests* folder. 
 
 =Result=
 If you choose to print results, you can see each pattern match with the relevant events like the following:
