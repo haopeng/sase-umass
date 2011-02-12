@@ -15,14 +15,14 @@ In SASE1.0, if you want to use the default simulated stock stream, you can use a
 {{{
  streamSize = 100000
  maxPrice = 1000
- maxSymbol = 2
+ numOfSymbol = 2
  maxVolume = 1000
  randomSeed = 10
  increaseProbability = 70
  end
 }}}
 
-You can find more examples in the SASE 1.0 package under query/ folder. All query files use the extension *.stream*.
+You can find more examples in the SASE 1.0 package under the *examples* folder and the *tests* folder. All query files use the extension *.stream*.
 
 =Customized stream=
 If you want to use your own customized stream, you need to follow these steps.
