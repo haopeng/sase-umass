@@ -29,7 +29,7 @@ If you want to modify the source code, the Main Class is *edu.umass.cs.sase.UI.C
 =Data Stream and Queries=
 If you want to generate your own data stream or queries, please follow the instructions below:
   * [http://code.google.com/p/sase-umass/wiki/04WriteAQuery How to write a query file]
-  * [http://code.google.com/p/sase-umass/wiki/03ConfigTheStream How to write a config file for the stream generator]
+  * [http://code.google.com/p/sase-umass/wiki/03ConfigTheStreamGeneratorm How to write a config file for the stream generator]
 
 =Script=
 The *examples* folder and the *tests* folder in the SASE 1.0 package include the scripts for running a set of experiments.
