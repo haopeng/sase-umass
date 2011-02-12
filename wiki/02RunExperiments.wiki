@@ -29,7 +29,7 @@ If you want to modify the source code, the Main Class is *edu.umass.cs.sase.UI.C
 
 
 =Running SASE Using a Script=
-The *examples* folder and the *tests* folder in the SASE 1.0 package include the scripts for running a set of experiments. All script files use the *.sh* extension.
+The *examples* folder and the *tests* folder in the SASE 1.0 package include the scripts for running a set of experiments. All script files use the extension *.sh*.
 
 =Data Stream and Queries=
 If you want to generate your own data stream or queries, please follow the instructions below:
