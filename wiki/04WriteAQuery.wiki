@@ -33,4 +33,4 @@ end
 }}}
 
 
-You can find more examples in SASE 1.0 package under query/ folder. All query files use the extension *.query*.
+You can find more examples in SASE 1.0 package under the *examples* folder and the *tests* folder. All query files use the extension *.query*.
