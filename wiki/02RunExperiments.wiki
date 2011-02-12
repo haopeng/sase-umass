@@ -2,9 +2,9 @@
 The SASE1.0 can be run from a command-line.
 
 = Command: running SASE using a command line =
-Assuming you unzipped the SASE 1.0 in location _*/SASE_HOME*_.
+
 ==1. Test run==
-The work directory is _*/SASE_HOME/build*_. Then use the following command to test the engine:
+The work directory is _*$SASE_HOME/build*_. Then use the following command to test the engine:
 {{{
 sase
 }}}
@@ -32,7 +32,7 @@ If you want to generate your own data stream or queries, please follow the instr
   * [http://code.google.com/p/sase-umass/wiki/03ConfigTheStream How to write a config file for the stream generator]
 
 =Script=
-The script files for some experiments are included in the *examples* folder and the *tests* folder. 
+The *examples* folder and the *tests* folder in the SASE 1.0 package include the scripts for running a set of experiments.
 
 =Result=
 If you choose to print results, you can see each pattern match with the relevant events like the following:
@@ -60,7 +60,7 @@ ID = 33171	Timestamp = 33171	Symbol = 1	Price = 18012	Volume = 73
 
 }}}
 
-Whether or not you choose to print the details of the results, the system will output the profiling numbers like this:
+No matter whether you choose to print the details of the results, the system will output the profiling numbers like this:
 {{{
 **************Profiling Numbers*****************
 Total Running Time: 571591000 nanoseconds
