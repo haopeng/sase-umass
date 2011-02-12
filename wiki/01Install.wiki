@@ -12,11 +12,10 @@ The structure of the SASE 1.0 package is as follows.
 || *bin/* || contains the complied classes. ||
 || *build/*|| contains the JAR file.||
 || *doc/* || contains the Java doc.||
+|| *examples/* || contains some quick examples for you to start ||
 || *lib/* || contains the required libraries.||
-|| *query/*|| contains the sample query files.||
-|| *scripts/*|| contains the sample script files.||
 || *src/*|| contains the Java source files||
-
+|| *tests/* || contains the queries and data files for a set of experiments ||
 
 = Software Requirement =
 
