@@ -21,6 +21,15 @@ The structure of the SASE 1.0 package is as follows.
 
  * Install the [http://www.oracle.com/technetwork/java/javase/downloads/index.html Java Runtime Environment] version 1.5.x or later
 
+= Configuration =
+Please follow the configuration steps below:
+
+  * Set the SASE_HOME environment variable to point to the YFilter installation directory.
+  * Add $SASE_HOME/build/sase.jar to the CLASSPATH
+  * Add $YFILTER_HOME/include/jeval.jar to the CLASSPATH.
+  * Add $SASE_HOME/bin to the PATH to access all the executables.
+  
+
 Next you can run the *sase.jar* under the *build/* folder by these [http://code.google.com/p/sase-umass/wiki/02RunExperiments commands].
 
 If you want to modify the source code, the *Main Class* is *edu.umass.cs.sase.UI.CommandLineUI.java*.
