@@ -6,7 +6,7 @@ The SASE1.0 can be run from a command-line.
 ==1. Test run==
 The work directory is _*$SASE_HOME/build*_. Then use the following command to test the engine:
 {{{
-sase
+*sase*
 }}}
 This will use the "test.query" and "test.stream" in the work directory.
 
