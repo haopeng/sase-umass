@@ -11,7 +11,9 @@
 =Graduate Students=
 
   * [http://www.cs.umass.edu/~haopeng/ Haopeng Zhang] University of Massachusetts Amherst
+
   * [http://www.cs.umass.edu/~dpg/ Daniel Gyllstrom] University of Massachusetts Amherst 
+
   * Jagrati Agrawal
 
 =Collaborators=
