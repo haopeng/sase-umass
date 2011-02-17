@@ -30,6 +30,6 @@ Please follow the configuration steps below:
   * Add *$SASE_HOME/bin* to the PATH to access all the executables.
   
 
-Next you can run the *sase.jar* under the *build/* folder by these [http://code.google.com/p/sase-umass/wiki/02RunExperiments commands].
+Next you can run *SASE* by these [http://code.google.com/p/sase-umass/wiki/02RunExperiments commands].
 
 If you want to modify the source code, the *Main Class* is *edu.umass.cs.sase.UI.CommandLineUI.java*.
