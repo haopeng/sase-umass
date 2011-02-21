@@ -18,6 +18,9 @@ AND b.volume < 150
 WITHIN 500
 }}}
 ==1.1 Keywords==
+|| PATTERN || Designates the pattern ||
+|| WHERE || WHERE clause is used to designate the conditions ||
+|| WITHIN || Specifies the time window ||
 ==1.2 Examples==
 =2. NFA Input= 
 
