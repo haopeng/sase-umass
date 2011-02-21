@@ -10,4 +10,4 @@
   * AND
   * OR
   * Features in other papers
-  * Support for imprecise timestamps, introduced by our [http://sase-umass.googlecode.com/files/sase-vldb10.pdf VLDB2010 paper]is not included in this release.
+  * Support for imprecise timestamps, introduced by our [http://sase-umass.googlecode.com/files/sase-vldb10.pdf VLDB2010 paper] is not included in this release.
