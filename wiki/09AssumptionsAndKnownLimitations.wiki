@@ -1,13 +1,13 @@
 #This page summarizes the assumptions and known limitations of the code comparing to related research.
 
 = Assumptions =
-  * time-based window
-  * total order
-  * support for imprecise timestamps is not included
-
+  * time-based window: the windows is time-based instead of count-based
+  * total order: we assume  events of the input stream are in order of occurrence time.
+ 
 = Limitations =
 
   * Overlap/Non-overlap
   * AND
   * OR
   * Features in other papers
+  * Support for imprecise timestamps, introduced by our [http://sase-umass.googlecode.com/files/sase-vldb10.pdf VLDB2010 paper]is not included in this release.
