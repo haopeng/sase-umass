@@ -1,16 +1,25 @@
 #This page explains how to write a query in a predefined format.
- 
+
+SASE 1.0 supports two formats for representing a query:
+  * Query input
+  * NFA input
+We will explain both formats as follows
+
+=1. Query Input=
+
+=2. NFA Input= 
+
 SASE 1.0 uses a query file to describe a query. A query file consists of two parts: header information and states.
 
 If you want to know more details about the keywords to appear below, please read our [http://sase-umass.googlecode.com/files/sase-sigmod08.pdf SIGMOD 08 paper], which will help you to understand the queries.
 
-=Header=
+==Header==
 In header information part, we have several parameters:
 ||selectionStrategy|| specifies the selection strategy for the query, in SASE 1.0, you can choose "skip-till-next-match" or "partition-contiguity"||
 ||timeWindow || specifies the size of time window||
 ||partition attribute || optional, you can specify an attribute as the partition attribute||
 
-=State=
+==State==
 Each query is represented by a nondeterministic finite automaton (NFA).  In the second part of the query file, we describe the states of the NFA. For each NFA state, we use one line to describe it. In each line, we have multiple parameters as following:
 
 ||State|| assigns a number to this state||
@@ -24,7 +33,7 @@ After providing the basic information for this state,  we can describe the edge(
 ||edgetype|| specifies the type of an edge, "begin" , "take" or "proceed"||
 ||predicate|| specifies the requirement for this state. If you want to use an equation, please use "==" instead of "=", e.g., "price == 10".||
 
-= Example =
+== Example ==
 {{{
 SelectionStrategy = partition-contiguity | TimeWindow = 500 | partitionAttribute = symbol
 State=1 & type = kleeneClosure & eventtype = stock | edgetype = begin  & price % 500 == 0 | edgetype = take | edgetype = proceed 
