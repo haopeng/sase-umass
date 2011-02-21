@@ -30,7 +30,7 @@ WITHIN 500
 In the *PATTERN* line, we use "SEQ(stock+ a, stock b)" to specify there are two components in the pattern. The event type of both components is "stock". The first component is of Kleene closure type, while the second component is a normal component. The aliases for the first and second component are "a" and "b", respectively.
 
 The condition part, Line 2 ~ Line 6, sets 5 conditions, one by each line.
-{{{ WHERE partition-contiguity}}} sets the event selection strategy as "partition-contiguity". "AND [symbol]" configures the "symbol" as the partition attribute. "AND a[1].price % 500 == 0" is the "begin" condition for the Kleene closure, which constraints the first event for the component. "AND a[i].price > min(a[..i-1].price)" requires each following event should have higher price than the minimum value of previous events for the component. 
+{{{ "WHERE partition-contiguity"}}} sets the event selection strategy as "partition-contiguity". {{{"AND [symbol]"}}} configures the "symbol" as the partition attribute. "AND a[1].price % 500 == 0" is the "begin" condition for the Kleene closure, which constraints the first event for the component. "AND a[i].price > min(a[..i-1].price)" requires each following event should have higher price than the minimum value of previous events for the component. 
 
 
 =2. NFA Input= 
