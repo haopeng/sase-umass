@@ -18,11 +18,11 @@ AND b.volume < 150
 WITHIN 500
 }}}
 ==1.1 Keywords==
-|| PATTERN || Designates the pattern ||
-|| SEQ(component, component,...) || Specifies the components of the pattern.A normal component is in the format "eventType alias", a Kleene closure component is in the format "eventType+ alias", a negation component is in the format "!eventType alias". The aliases should follow the alphabetical order, e.g, the first component uses 'a', the second component uses 'b', etc. A ',' is used between components.||
-|| WHERE || Designate the conditions ||
-|| AND || Connects two conditions ||
-|| WITHIN || Specifies the time window ||
+|| PATTERN || designates the pattern ||
+|| SEQ(component, component,...) || specifies the components of the pattern.A normal component is in the format "eventType alias", a Kleene closure component is in the format "eventType+ alias", a negation component is in the format "!eventType alias". The aliases should follow the alphabetical order, e.g, the first component uses 'a', the second component uses 'b', etc. A ',' is used between components.||
+|| WHERE || designate the conditions. The first condition is the event selection strategy, which should be one among {"partition-contiguity", "skip-till-next-match", "skip-till-any-match"}. You can designate one partition attribute by using "[attributeName]" as a condition, which means events for a match should have the same value on this attribute. If you want to use a equation as a predicate, please use "==" instead of "=", e.g., "a.symbol == 1". Space is needed before and after the mathematical operators (+, -, *, /, %) and logical operators(==, >, <, >=, <=). ||
+|| AND || connects two conditions. Each condition uses a single line in format. ||
+|| WITHIN || specifies the time window. Here we only allow integers without any units.||
 
 ==1.2 Examples==
 =2. NFA Input= 
