@@ -19,8 +19,11 @@ WITHIN 500
 }}}
 ==1.1 Keywords==
 || PATTERN || Designates the pattern ||
-|| WHERE || WHERE clause is used to designate the conditions ||
+|| SEQ(component, component,...) || Specifies the components of the pattern.A normal component is in the format "eventType alias", a Kleene closure component is in the format "eventType+ alias", a negation component is in the format "!eventType alias". The aliases should follow the alphabetical order, e.g, the first component uses 'a', the second component uses 'b', etc. A ',' is used between components.||
+|| WHERE || Designate the conditions ||
+|| AND || Connects two conditions ||
 || WITHIN || Specifies the time window ||
+
 ==1.2 Examples==
 =2. NFA Input= 
 
