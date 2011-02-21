@@ -6,7 +6,17 @@ SASE 1.0 supports two formats for representing a query:
 We will explain both formats as follows
 
 =1. Query Input=
+The query inputs uses a more friendly style, which is similar to the language we used in our SIGMOD 08 paper. Look at the following example:
 
+{{{
+PATTERN SEQ(stock+ a, stock b)
+WHERE partition-contiguity
+AND [symbol]
+AND a[1].price % 500 == 0
+AND a[i].price > min(a[..i-1].price)
+AND b.volume < 150
+WITHIN 500
+}}}
 =2. NFA Input= 
 
 SASE 1.0 uses a query file to describe a query. A query file consists of two parts: header information and states.
