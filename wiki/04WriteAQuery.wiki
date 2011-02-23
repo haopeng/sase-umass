@@ -35,7 +35,7 @@ Predicate can use one of the six comparison operators (==, !=, <, >, <=, >=).
 Some notes:
   * *Space* is needed before and after the mathematical operators (+, - etc.) and logical operators (==, !=, <, >, <=, >=), e.g. {{{a.price > 100}}} is correct, while {{{a.price>100}}} is incorrect.
   * Predicates are connected by *AND*.
-  * Each predicate should take one line.
+  * Each predicate should take *one line*.
   * You can designate one partition attribute by using *"{{{[AttributeName]}}}"*, e.g. *{{{[symbol]}}}*
 ===Kleene Closure===
 For Kleene closure, some special symbols can be used in square bracket to denote certain events:
