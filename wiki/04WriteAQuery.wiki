@@ -49,7 +49,7 @@ AND [id]
 WITHIN 12
 }}}
 
-*Q3: Stock market trend:* the price of a stock went beyond a threshold,but after a period the when the price kept increasing, the volume plummeted.
+*Q3: Stock market trend:* the price of a stock went beyond a threshold,but after a period the when the price kept increasing, the volume plummeted.(The example is from Q3 in SIGMOD2008 [http://sase-umass.googlecode.com/files/sase-sigmod08.pdf paper])
 {{{
 PATTERN SEQ(stock+ a, stock b)
 WHERE partition-contiguity
@@ -70,11 +70,6 @@ The "condition" part, Line 2 ~ Line 6, sets 5 conditions, one by each line.
   * *{{{"AND a[i].price > min(a[..i-1].price)"}}}* requires each following event should have higher price than the minimum value of previous events for the component. 
 
 The last line *{{{WITHIN 500}}}* sets the time window as 500.
-
-(This example is similar)
-
-===More examples from our paper===
-The following examples are from our papers. As the language has evolved, so there may exist some differences on format.
 
 
 
