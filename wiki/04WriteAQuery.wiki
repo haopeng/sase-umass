@@ -18,7 +18,10 @@ PATTERN <event pattern>
 || WITHIN || specifies the time window. Here we only allow integers without any units.||
 
 ===Pattern Component===
-A normal component is in the format "eventType alias", a Kleene closure component is in the format "eventType+ alias", a negation component is in the format "!eventType alias". The aliases should follow the alphabetical order, e.g, the first component uses 'a', the second component uses 'b', etc. A ',' is used between components.
+  * A *normal* component is in the format *"EventType alias"*, e.g.*{{{Stock a}}}* 
+  * A *Kleene closure* component is in the format *"EventType+ alias"*, e.g. *{{{Stock+ a}}}*
+  * A *negation* component is in the format *"!{eventType alias}"*,e.g. *{{{!Stock a}}}* 
+The aliases should follow the alphabetical order, e.g, the first component uses 'a', the second component uses 'b', etc. A ',' is used between components.
 ===Predicate===
 If you want to use a equation as a predicate, please use "==" instead of "=", e.g., "a.symbol == 1". Space is needed before and after the mathematical operators (+, - etc.) and logical operators (==, >, <, >=, <=).
 ===Selection Strategy===
