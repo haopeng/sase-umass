@@ -1,4 +1,4 @@
-#This page explains how to run the engine.  
+#This page explains how to run the engine.   
 The SASE1.0 can be run from a command-line.
 
 = Running SASE Using a Command Line =
