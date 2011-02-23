@@ -30,15 +30,32 @@ The first condition is the event selection strategy, which should be one among {
 You can designate one partition attribute by using "[attributeName]" as a condition, which means events for a match should have the same value on this attribute.
 ===Kleene Closure===
 For Kleene closure, some special symbols can be used in square bracket: "1" means the first event for the component, "i" and "i-1" are used to compare two consecutive events for the component, "..i-1" is used to describe all previous events for the component. We support three kinds of aggregation: max, min and avg
-==1.3 Example==
-Look at the following example:
+==1.3 Examples==
+We will use three examples to illustrate the SASE language.
 
+*Q1. Shelf-reading*: the following query retrieves readings at a shelf about a product whose category is food and whose manufacturer has id '1'. (The example is from Q1 in SIGMOD2006 [http://sase-umass.googlecode.com/files/sase-sigmod2006.pdf paper])
+{{{
+PATTERN SEQ(SHELF-READING a)
+WHERE skip-till-any-match
+AND a.category == 'food'
+AND manufacturer_id == '1'
+}}}
+
+*Q2. Shoplifting:* the second query detects shoplifting activity. It reports items that were picked at a shelf and then taken out of the store without being checked out. (The example is from Q2 in SIGMOD2006 [http://sase-umass.googlecode.com/files/sase-sigmod2006.pdf paper])
+{{{
+PATTERN SEQ(SHELF-READING a, !(COUNTER-READING b), EXIT-READING c)
+WHERE skip-till-any-match
+AND [id]
+WITHIN 12
+}}}
+
+*Q3: Stock market trend:* the price of a stock went beyond a threshold,but after a period the when the price kept increasing, the volume plummeted.
 {{{
 PATTERN SEQ(stock+ a, stock b)
 WHERE partition-contiguity
 AND [symbol]
-AND a[1].price % 500 == 0
-AND a[i].price > min(a[..i-1].price)
+AND a[1].price > 1000
+AND a[i].price > avg(a[..i-1].price)
 AND b.volume < 150
 WITHIN 500
 }}}
@@ -54,24 +71,12 @@ The "condition" part, Line 2 ~ Line 6, sets 5 conditions, one by each line.
 
 The last line *{{{WITHIN 500}}}* sets the time window as 500.
 
+(This example is similar)
+
 ===More examples from our paper===
 The following examples are from our papers. As the language has evolved, so there may exist some differences on format.
 
-*Q1. Shelf-reading*: the following query retrieves readings at a shelf about a product whose category is food and whose manufacturer has id '1'. (see the example in SIGMOD2006 [http://sase-umass.googlecode.com/files/sase-sigmod2006.pdf paper])
-{{{
-PATTERN SEQ(SHELF-READING a)
-WHERE skip-till-any-match
-AND a.category == 'food'
-AND manufacturer_id == '1'
-}}}
 
-*Q2. Shoplifting:* the second query detects shoplifting activity. It reports items that were picked at a shelf and then taken out of the store without being checked out. (see the example in SIGMOD2006 [http://sase-umass.googlecode.com/files/sase-sigmod2006.pdf paper])
-{{{
-PATTERN SEQ(SHELF-READING a, !(COUNTER-READING b), EXIT-READING c)
-WHERE skip-till-any-match
-AND [id]
-WITHIN 12
-}}}
 
 =2. NFA Input= 
 
