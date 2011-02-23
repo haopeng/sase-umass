@@ -9,5 +9,5 @@
   * *Overlapping/non-overlapping*: In our [http://sase-umass.googlecode.com/files/sase-sigmod08.pdf SIGMOD 2008] paper, we mentioned "overlapping/non-overlapping". In this release, we only support the "overlapping" mode.
   * *AND*: We do not support the "AND" operator, which allows arbitrary order among consecutive components. For example, for pattern {{{SEQ(A, (B AND C), D)}}}, both {{{SEQ(A, B, C, D)}}} and {{{SEQ(A, C, B, D)}}} will be allowed.
   * *OR*: We do not support the "OR" operator, which allows alternative events for a component. For example, for pattern {{{SEQ (A, (B OR C), D)}}}, both {{{SEQ(A, B, D)}}} and {{{SEQ(A, C, D)}}} will be allowed.
-  * *Shared Versioned Match Buffer*: In the release we do not include this feature metioned in our SIGMOD 2008[http://sase-umass.googlecode.com/files/sase-sigmod08.pdf paper].
+  * *Shared Versioned Match Buffer*: In the release we do not include this feature metioned in our SIGMOD 2008 [http://sase-umass.googlecode.com/files/sase-sigmod08.pdf paper].
   * *Imprecise timestamps*: Support for imprecise timestamps, introduced by our [http://sase-umass.googlecode.com/files/sase-vldb10.pdf VLDB2010 paper] is not included in this release.
