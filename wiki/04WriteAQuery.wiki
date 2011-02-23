@@ -79,7 +79,7 @@ The "condition" part, Line 2 ~ Line 6, sets 5 conditions, one by each line.
 
 The last line *{{{WITHIN 500}}}* sets the time window as 500.
 
-
+You can find more examples in SASE 1.0 package under the *examples* folder and the *tests* folder. All query files use the extension *.query*.
 
 =2. NFA Input= 
 
@@ -116,4 +116,4 @@ end
 }}}
 
 
-You can find more examples in SASE 1.0 package under the *examples* folder and the *tests* folder. All query files use the extension *.query*.
+You can find more examples in SASE 1.0 package under the *examples* folder and the *tests* folder. All query files use the extension *.nfa*.
