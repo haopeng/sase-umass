@@ -3,7 +3,7 @@
 SASE 1.0 supports two formats for representing a query:
   * [http://code.google.com/p/sase-umass/wiki/04WriteAQuery?ts=1298429299&updated=04WriteAQuery#1._Query_Input SASE Language Query input]
   * [http://code.google.com/p/sase-umass/wiki/04WriteAQuery?ts=1298429861&updated=04WriteAQuery#2._NFA_Input NFA input]
-We will explain both formats as follows
+We will explain both formats below.
 
 =1. SASE Language Query Input=
 The SASE language is a declarative language.  The overall structure of the SASE language is :
