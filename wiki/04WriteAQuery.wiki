@@ -14,7 +14,10 @@ The query inputs uses a more friendly style, which is similar to the language we
 || AND || connects two conditions. Each condition uses a single line in format. ||
 || WITHIN || specifies the time window. Here we only allow integers without any units.||
 
-==1.2 Example==
+==1.2 Explanations==
+===Predicate===
+===Selection Strategy===
+==1.3 Example==
 Look at the following example:
 
 {{{
