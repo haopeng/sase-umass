@@ -8,7 +8,7 @@ We will explain both formats as follows
 =1. SASE Language Query Input=
 The SASE language is a declarative language.  The overall structure of the SASE language is :
 {{{
-PATTERN <event pattern>
+PATTERN <sequence pattern>
 [WHERE  <qualification>]
 [WITHIN <time window>]
 }}}
