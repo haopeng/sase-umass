@@ -31,6 +31,7 @@ Event selection strategy addresses how to select the relevant events from an inp
 More about event selection strategies, please read Section 2 in our SIGMOD2008 [http://sase-umass.googlecode.com/files/sase-sigmod08.pdf paper]
 ===Predicate===
 Predicate can use one of the six comparison operators (==, !=, <, >, <=, >=).
+
 Some notes:
   * Space is needed before and after the mathematical operators (+, - etc.) and logical operators (==, !=, <, >, <=, >=).
   * Predicates are connected by *AND*.
