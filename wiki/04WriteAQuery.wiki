@@ -20,8 +20,8 @@ PATTERN <event pattern>
 ===Pattern Component===
   * A *normal* component is in the format *"EventType alias"*, e.g.*{{{Stock a}}}* 
   * A *Kleene closure* component is in the format *"EventType+ alias"*, e.g. *{{{Stock+ a}}}*
-  * A *negation* component is in the format *"!{eventType alias}"*,e.g. *{{{!Stock a}}}* 
-The aliases should follow the alphabetical order, e.g, the first component uses 'a', the second component uses 'b', etc. A ',' is used between components.
+  * A *negation* component is in the format *"!{EventType alias}"*,e.g. *{{{!Stock a}}}* 
+The aliases should follow the alphabetical order, e.g, the first component uses 'a', and the second component uses 'b', etc. A ',' is used between components. For example, a query containing three components can start with this *{{{PATTERN SEQ(Stock a, Stock+ b, Stock c)}}}*.
 ===Predicate===
 If you want to use a equation as a predicate, please use "==" instead of "=", e.g., "a.symbol == 1". Space is needed before and after the mathematical operators (+, - etc.) and logical operators (==, >, <, >=, <=).
 ===Selection Strategy===
