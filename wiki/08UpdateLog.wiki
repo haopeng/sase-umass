@@ -1,4 +1,9 @@
-#This page lists the changes for each update. 
+#This page lists the changes for each update.  
+=SASE 1.0.2. update=
+ # Supports the SASE language, and test queries are rewritten in SASE language.
+ # Supports *skip-till-any-match*
+ # Supports *negation*
+
 =SASE 1.0.1. update=
  # Re-organized the *examples* and *tests*
  # Included the test results for all experiments
