@@ -1,7 +1,7 @@
 #This page explains how to write a query in a predefined format.
 
 SASE 1.0 supports two formats for representing a query:
-  * Query input
+  * [http://code.google.com/p/sase-umass/wiki/04WriteAQuery?ts=1298429299&updated=04WriteAQuery#1._Query_Input Query input]
   * NFA input
 We will explain both formats as follows
 
