@@ -39,7 +39,9 @@ Some notes:
 ===Kleene Closure===
 For Kleene closure, some special symbols can be used in square bracket to denote certain events:
   * *{{{[1]}}}* means the first event for the component, e.g. {{{a[1].price > 1000}}} 
-"i" and "i-1" are used to compare two consecutive events for the component, "..i-1" is used to describe all previous events for the component. We support three kinds of aggregation: max, min and avg
+  * *{{{[[i]]], [[[i-1]]]" are used to compare two consecutive events for the Kleene closure component, e.g. {{{a[i].price > a[i-1].price}}}
+  * *{{{[..i-1]* is used to denote all previous events for the Kleene closure component, e.g. {{{a[i].price > avg(a[..i-1].price)}}}
+  * We support three kinds of aggregation: *max, min and avg*
 ==1.3 Examples==
 We will use three examples to illustrate the SASE language.
 
@@ -67,7 +69,7 @@ This query contains three components, of which the second one is a negation comp
   * *{{{AND [id]}}}* requires that the *id* attribute of the three events should be equivalent.
   * *{{{WITHIN 12}}}* specifies the time window.
 
-*Q3: Stock market trend:* the price of a stock went beyond a threshold,but after a period the when the price kept increasing, the volume plummeted.(The example is from Q3 in SIGMOD2008 [http://sase-umass.googlecode.com/files/sase-sigmod08.pdf paper])
+*Q3: Stock market trend:* the price of a stock went beyond a threshold,but after a period the when the price kept increasing or remained relatively stable, the volume plummeted.(The example is from Q3 in SIGMOD2008 [http://sase-umass.googlecode.com/files/sase-sigmod08.pdf paper])
 {{{
 PATTERN SEQ(stock+ a, stock b)
 WHERE skip-till-next-match
