@@ -1,4 +1,4 @@
-#This page explains how to configure the stream generator.  
+#This page explains how to configure the stream generator.   
 
 =Simulated stock stream=
 In SASE1.0, if you want to use the default simulated stock stream, you can use a stream file to configure the stream generator. There are several parameters you can modify:
