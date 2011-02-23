@@ -37,7 +37,9 @@ Some notes:
   * Each predicate should take one line.
   * You can designate one partition attribute by using *"{{{[AttributeName]}}}"*, e.g. *{{{[symbol]}}}*
 ===Kleene Closure===
-For Kleene closure, some special symbols can be used in square bracket: "1" means the first event for the component, "i" and "i-1" are used to compare two consecutive events for the component, "..i-1" is used to describe all previous events for the component. We support three kinds of aggregation: max, min and avg
+For Kleene closure, some special symbols can be used in square bracket to denote certain events:
+  * *{{{[1]}}}* means the first event for the component, e.g. {{{a[1].price > 1000}}} 
+"i" and "i-1" are used to compare two consecutive events for the component, "..i-1" is used to describe all previous events for the component. We support three kinds of aggregation: max, min and avg
 ==1.3 Examples==
 We will use three examples to illustrate the SASE language.
 
