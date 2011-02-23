@@ -14,8 +14,8 @@ PATTERN <event pattern>
 }}}
 ==1.1 Keywords==
 || PATTERN || designates the pattern ||
-|| SEQ(component, component,...) || specifies the components of the pattern.[http://code.google.com/p/sase-umass/wiki/04WriteAQuery?ts=1298432132&updated=04WriteAQuery#Pattern_Component Details...]||
-|| WHERE || designate the conditions. The first condition is the event selection strategy, which should be one among {"partition-contiguity", "skip-till-next-match", "skip-till-any-match"}. You can designate one partition attribute by using "[attributeName]" as a condition, which means events for a match should have the same value on this attribute. If you want to use a equation as a predicate, please use "==" instead of "=", e.g., "a.symbol == 1". Space is needed before and after the mathematical operators (+, - etc.) and logical operators (==, >, <, >=, <=).  For Kleene closure, some special symbols can be used in square bracket: "1" means the first event for the component, "i" and "i-1" are used to compare two consecutive events for the component, "..i-1" is used to describe all previous events for the component. We support three kinds of aggregation: max, min and avg ||
+|| SEQ(component, component,...) || specifies the components of the pattern.[http://code.google.com/p/sase-umass/wiki/04WriteAQuery?ts=1298432132&updated=04WriteAQuery#Pattern_Component (Details)]||
+|| WHERE || designate the conditions.  ||
 || AND || connects two conditions. Each condition uses a single line in format. ||
 || WITHIN || specifies the time window. Here we only allow integers without any units.||
 
@@ -24,6 +24,7 @@ PATTERN <event pattern>
 A normal component is in the format "eventType alias", a Kleene closure component is in the format "eventType+ alias", a negation component is in the format "!eventType alias". The aliases should follow the alphabetical order, e.g, the first component uses 'a', the second component uses 'b', etc. A ',' is used between components.
 ===Predicate===
 ===Selection Strategy===
+The first condition is the event selection strategy, which should be one among {"partition-contiguity", "skip-till-next-match", "skip-till-any-match"}. You can designate one partition attribute by using "[attributeName]" as a condition, which means events for a match should have the same value on this attribute. If you want to use a equation as a predicate, please use "==" instead of "=", e.g., "a.symbol == 1". Space is needed before and after the mathematical operators (+, - etc.) and logical operators (==, >, <, >=, <=).  For Kleene closure, some special symbols can be used in square bracket: "1" means the first event for the component, "i" and "i-1" are used to compare two consecutive events for the component, "..i-1" is used to describe all previous events for the component. We support three kinds of aggregation: max, min and avg
 ===Partition Attribute===
 ===Kleene Closure===
 ==1.3 Example==
