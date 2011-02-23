@@ -54,6 +54,25 @@ The "condition" part, Line 2 ~ Line 6, sets 5 conditions, one by each line.
 
 The last line *{{{WITHIN 500}}}* sets the time window as 500.
 
+===More examples from our paper===
+The following examples are from our papers. As the language has evolved, so there may exist some differences on format.
+
+*Q1. Shelf-reading*: the following query retrieves readings at a shelf about a product whose category is food and whose manufacturer has id '1'. (see the example in SIGMOD2006 [http://sase-umass.googlecode.com/files/sase-sigmod2006.pdf paper])
+{{{
+PATTERN SEQ(SHELF-READING a)
+WHERE skip-till-any-match
+AND a.category == 'food'
+AND manufacturer_id == '1'
+}}}
+
+*Q2. Shoplifting:* the second query detects shoplifting activity. It reports items that were picked at a shelf and then taken out of the store without being checked out. (see the example in SIGMOD2006 [http://sase-umass.googlecode.com/files/sase-sigmod2006.pdf paper])
+{{{
+PATTERN SEQ(SHELF-READING a, !(COUNTER-READING b), EXIT-READING c)
+WHERE skip-till-any-match
+AND [id]
+WITHIN 12
+}}}
+
 =2. NFA Input= 
 
 SASE 1.0 uses a query file to describe a query. A query file consists of two parts: header information and states.
