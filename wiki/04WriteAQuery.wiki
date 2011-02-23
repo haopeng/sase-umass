@@ -22,10 +22,16 @@ PATTERN <event pattern>
   * A *Kleene closure* component is in the format *"EventType+ alias"*, e.g. *{{{Stock+ a}}}*
   * A *negation* component is in the format *"!{EventType alias}"*,e.g. *{{{!Stock a}}}* 
 The aliases should follow the alphabetical order, e.g, the first component uses 'a', and the second component uses 'b', etc. A ',' is used between components. For example, a query containing three components can start with this *{{{PATTERN SEQ(Stock a, Stock+ b, Stock c)}}}*.
+===Event Selection Strategy===
+Event selection strategy addresses how to select the relevant events from an input streaming mixing relevant and irrelevant events. We support the following selection strategies:
+  * *partition-contiguity*: If the events are conceptually partitioned based on a condition, the next relevant event must be contiguous to the previous one in the same partition. The equivalent tests or partition attributes are commonly used to form partitions.
+  * *skip-till-next-match*: All irrelevant events will be skipped until the next relevant event is read.
+  * *skip-till-any-match*: It relaxes the *skip-till-next-match* by allowing non-deterministic actions on relevant events.
+
+More about event selection strategies, please read Section 2 in our SIGMOD2008 [http://sase-umass.googlecode.com/files/sase-sigmod08.pdf paper]
 ===Predicate===
 If you want to use a equation as a predicate, please use "==" instead of "=", e.g., "a.symbol == 1". Space is needed before and after the mathematical operators (+, - etc.) and logical operators (==, >, <, >=, <=).
-===Selection Strategy===
-The first condition is the event selection strategy, which should be one among {"partition-contiguity", "skip-till-next-match", "skip-till-any-match"}.   
+ 
 ===Partition Attribute===
 You can designate one partition attribute by using "[attributeName]" as a condition, which means events for a match should have the same value on this attribute.
 ===Kleene Closure===
