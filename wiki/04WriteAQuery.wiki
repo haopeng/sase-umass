@@ -6,7 +6,12 @@ SASE 1.0 supports two formats for representing a query:
 We will explain both formats as follows
 
 =1. SASE Language Query Input=
-The SASE language is a declarative language. 
+The SASE language is a declarative language.  The overall structure of the SASE language is :
+{{{
+PATTERN <event pattern>
+[WHERE  <qualification>]
+[WITHIN <time window>]
+}}}
 ==1.1 Keywords==
 || PATTERN || designates the pattern ||
 || SEQ(component, component,...) || specifies the components of the pattern.[http://code.google.com/p/sase-umass/wiki/04WriteAQuery?ts=1298432132&updated=04WriteAQuery#Pattern_Component Details...]||
