@@ -12,9 +12,9 @@ PATTERN <sequence pattern>
 [WHERE  <qualification>]
 [WITHIN <time window>]
 }}}
-==1.1 Explanations==
-|| *PATTERN* || designates the pattern in form of SEQ(component, component,...) [http://code.google.com/p/sase-umass/wiki/04WriteAQuery?ts=1298432132&updated=04WriteAQuery#Pattern_Component (details)].||
-|| *WHERE* || designate the qualifications. The first one should specify the event selection strategy [http://code.google.com/p/sase-umass/wiki/04WriteAQuery#Selection_Strategy (details)]. Other qualifications can specify  a predicate or a partition attribute([http://code.google.com/p/sase-umass/wiki/04WriteAQuery?ts=1298433604&updated=04WriteAQuery#Predicate details])  ||
+==1.1 Explanation==
+|| *PATTERN* || specifies the pattern in form of SEQ(component, component,...) [http://code.google.com/p/sase-umass/wiki/04WriteAQuery?ts=1298432132&updated=04WriteAQuery#Pattern_Component (details)].||
+|| *WHERE* || specifies the qualifications. The first line should specify the event selection strategy [http://code.google.com/p/sase-umass/wiki/04WriteAQuery#Selection_Strategy (details)]. The subsequence lines specify a partition attribute or a predicate, one in each line.([http://code.google.com/p/sase-umass/wiki/04WriteAQuery?ts=1298433604&updated=04WriteAQuery#Predicate details])  ||
 || *WITHIN* || specifies the time window. Here we only allow integers without any units.||
 
 ===Pattern Component===
