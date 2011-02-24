@@ -1,9 +1,9 @@
 #This page summarizes the assumptions and known limitations of the code comparing to related research.
 
 = Assumptions =
-We have the following assumptions:
+We make the following assumptions:
   * *Time-based window*: the windows is time-based instead of count-based
-  * *Total order*: we assume  events of the input stream are in order of occurrence time.
+  * *Total order*: we assume  events of the input stream are ordering by the occurrence time.
  
 =Known Limitations =
 The SASE 1.0 has the following known limitations:
