@@ -1,5 +1,7 @@
 #This page lists the changes for each update.  
 =SASE 1.0.2. update=
+ # Adds a new query parser, which is more flexible on the input format
+=SASE 1.0.2. update=
  # Supports the SASE language, and test queries are rewritten in SASE language.
  # Supports *skip-till-any-match*
  # Supports *negation*
