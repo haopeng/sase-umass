@@ -49,8 +49,8 @@ We will use three examples to illustrate the SASE language.
 {{{
 PATTERN SEQ(SHELF-READING a)
 WHERE skip-till-any-match
-AND a.category == 'food'
-AND manufacturer_id == '1'
+AND a.category = 'food'
+AND manufacturer_id = '1'
 }}}
 
 There is only one component in this query. The *WHERE* specifies the two predicates. The event selection strategy does not make any difference for this query because it only contains one component.
@@ -122,7 +122,7 @@ After providing the basic information for this state,  we can describe the edge(
 ==2.3 Example ==
 {{{
 SelectionStrategy = partition-contiguity | TimeWindow = 500 | partitionAttribute = symbol
-State=1 & type = kleeneClosure & eventtype = stock | edgetype = begin  & price % 500 == 0 | edgetype = take | edgetype = proceed 
+State=1 & type = kleeneClosure & eventtype = stock | edgetype = begin  & price % 500 = 0 | edgetype = take | edgetype = proceed 
 State=2 & type = normal & eventtype = stock | edgetype = begin & volume < 150
 end
 }}}
