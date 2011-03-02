@@ -86,7 +86,7 @@ The "condition" part, Line 2 ~ Line 6, sets 5 conditions, one by each line.
 
   * *{{{ "WHERE skip-till-next-match"}}}* sets the event selection strategy as "skip-till-next-match". 
   * *{{{"AND [symbol]"}}}* configures the "symbol" as the partition attribute. 
-  * *{{{"AND a[1].price % 500 == 0"}}}* is the "begin" condition for the Kleene closure, which constraints the first event for the component. 
+  * *{{{"AND a[1].price % 500 = 0"}}}* is the "begin" condition for the Kleene closure, which constraints the first event for the component. 
   * *{{{"AND a[i].price > min(a[..i-1].price)"}}}* requires each following event should have higher price than the minimum value of previous events for the component. 
 
 The last line *{{{WITHIN 500}}}* sets the time window as 500.
