@@ -117,7 +117,7 @@ We use an "&" symbol to connect the parameters.
 After providing the basic information for this state,  we can describe the edge(s), and each edge can be separated by "|". An edge contains the edgetype and predicate(s).
 
 ||edgetype|| specifies the type of an edge, "begin" , "take" or "proceed"||
-||predicate|| specifies the requirement for this state. If you want to use an equation, please use "==" instead of "=", e.g., "price == 10".||
+||predicate|| specifies the requirement for this state||
 
 ==2.3 Example ==
 {{{
