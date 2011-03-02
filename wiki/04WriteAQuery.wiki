@@ -41,7 +41,7 @@ For Kleene closure, some special symbols can be used in square bracket to denote
   * *{{{[1]}}}* means the first event for the component, e.g. {{{a[1].price > 1000}}} 
   * *{{{[i], [i-1]}}}* are used to compare two consecutive events for the Kleene closure component, e.g. {{{a[i].price > a[i-1].price}}}
   * *{{{[..i-1]}}}* is used to denote all previous events for the Kleene closure component, e.g. {{{a[i].price > avg(a[..i-1].price)}}}
-  * We support three kinds of aggregation: *max, min and avg*
+  * We support three kinds of aggregation: *max, min, avg, count and sum*
 ==1.3 Examples==
 We will use three examples to illustrate the SASE language.
 
