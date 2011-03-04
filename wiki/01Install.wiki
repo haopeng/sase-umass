@@ -1,4 +1,4 @@
-#This page explains how to install SASE 1.0 on your machine.    
+#This page explains how to install SASE 1.0 on your machine.     
 
 Since we developed SASE using Java, a Java Runtime Environment must be installed. The engine also uses libraries which are included in the [http://sase-umass.googlecode.com/files/sase1.0.zip SASE 1.0 package]. We have tested the SASE system on UNIX, Mac OS X and Windows.
 
