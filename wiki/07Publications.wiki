@@ -1,4 +1,4 @@
-#.Publications of this project 
+#.Publications of this project  
 
 = Publications =
 
