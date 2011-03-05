@@ -2,7 +2,7 @@
 
 = Assumptions =
 We make the following assumptions:
-  * *Time-based window*: the windows is time-based instead of count-based
+  * *Time-based window*: the windows is time-based instead of count-based. The timestamps we use are integers without units, and we allow multiple events have the same timestamp.
   * *Total order*: we assume  events of the input stream are ordering by the occurrence time.
  
 =Known Limitations =
