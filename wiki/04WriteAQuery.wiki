@@ -24,7 +24,7 @@ PATTERN <sequence pattern>
 The variables should follow the alphabetical order, e.g, the first component uses 'a', and the second component uses 'b', etc. A ',' is used between components. For example, a query containing three components can start with this *{{{PATTERN SEQ(Stock a, Stock+ b, Stock c)}}}*.
 ===Event Selection Strategy===
 Event selection strategy addresses how to select the events relevant to a pattern query, not necessarily in contiguous positions in the input stream. We support the following selection strategies:
-  * *partition-contiguity*: If the events are conceptually partitioned based on a condition, the next relevant event must be contiguous to the previous one in the same partition. The equivalent tests or partition attributes are commonly used to form partitions.
+  * *partition-contiguity*: If the events are conceptually partitioned based on a condition, the next relevant event must be contiguous to the previous one in the same partition. You can specify an attribute as the partition attribute, then each partition should correspond to a specific value for this attribute.
   * *skip-till-next-match*: The selection strategy aims to find the "first" match of each pattern component. In the pattern matching process, the next relevant event does not need to be contiguous to the previous one; all irrelevant events will be skipped until the next relevant event is read. This strategy makes the query insensitive to the presence of irrelevant events.
   * *skip-till-any-match*: The selection strategy aims to find "all" matches of each pattern component. This  relaxes the *skip-till-next-match* by allowing non-deterministic actions on relevant events.
 
