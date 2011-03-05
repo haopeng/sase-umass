@@ -24,7 +24,8 @@ The structure of the SASE 1.0 package is as follows.
 = Configuration =
 Please follow the configuration steps below:
 
-  * Set the *SASE_HOME* environment variable to point to the SASE installation directory.
+  * Unzip the package you download
+  * Set the *SASE_HOME* environment variable to point to the folder where the unzipped files are placed.
   * Add *$SASE_HOME/build/sase.jar* to the CLASSPATH
   * Add *$SASE_HOME/lib/jeval.jar* to the CLASSPATH.
   * Add *$SASE_HOME/bin* to the PATH to access all the executables.
