@@ -18,6 +18,6 @@
 
 =Collaborators=
 
-  * Eugene Wu (2006)
+  * Eugene Wu (2005-2006)
 
 We would also like to thank Hee-Jin Chae, Gordon Anderson, and Patrick Stahlberg for their contributions to the project. 
