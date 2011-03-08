@@ -6,7 +6,7 @@ SASE is a stream processing system developed at the University of Massachusetts 
 In the package of SASE 1.0, we include the following components:
 
   * *Query Evaluation Engine*: evaluates pattern queries over streams
-  * *NFA Parser*: reads in an automaton-based representation of a query in a pre-defined format
+  * *NFA Parser*: we provide two query parser. One can read queries in the SASE language, and another can read an automaton-based representation of a query in a pre-defined format
   * *Stream Generator*: generates synthetic data for experiments
   * *Command Line User Interface*
 
