@@ -12,12 +12,12 @@
 
   * [http://www.cs.umass.edu/~haopeng/ Haopeng Zhang] University of Massachusetts Amherst (2008-present)
 
-  * [http://www.cs.umass.edu/~dpg/ Daniel Gyllstrom] University of Massachusetts Amherst (2007-2008)
+  * [http://www.cs.umass.edu/~dpg/ Daniel Gyllstrom] University of Massachusetts Amherst (2006-2008)
 
   * Jagrati Agrawal (2007-2008)
 
 =Collaborators=
 
-  * Eugene Wu (2005-2006)
+  * Eugene Wu (2005-2007)
 
 We would also like to thank Hee-Jin Chae, Gordon Anderson, and Patrick Stahlberg for their contributions to the project. 
