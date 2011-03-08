@@ -35,7 +35,7 @@ Predicate can use one of the six comparison operators (=, !=, <, >, <=, >=).
 Some notes:
   * Predicates are connected by *AND*.
   * Each predicate should take *one line*.
-  * You can specify one partition attribute using *"{{{[AttributeName]}}}"*, e.g. *{{{[symbol]}}}*
+  * You can specify a partition attribute using *"{{{[AttributeName]}}}"*, e.g. *{{{[symbol]}}}*. If you want to specify more than one partition attributes, please specify one by each line.
 ===Kleene Closure===
 For Kleene closure, some special symbols can be used in square bracket to denote certain events:
   * *{{{[1]}}}* means the first event for the component, e.g. {{{a[1].price > 1000}}} 
