@@ -1,4 +1,4 @@
-#People who contributed to this project.  
+#People who contributed to this project. 
  
 =Faculty=
 
@@ -10,14 +10,14 @@
 
 =Graduate Students=
 
-  * [http://www.cs.umass.edu/~haopeng/ Haopeng Zhang] University of Massachusetts Amherst
+  * [http://www.cs.umass.edu/~haopeng/ Haopeng Zhang] University of Massachusetts Amherst (2008-present)
 
-  * [http://www.cs.umass.edu/~dpg/ Daniel Gyllstrom] University of Massachusetts Amherst 
+  * [http://www.cs.umass.edu/~dpg/ Daniel Gyllstrom] University of Massachusetts Amherst (2007-2008)
 
-  * Jagrati Agrawal
+  * Jagrati Agrawal (2007-2008)
 
 =Collaborators=
 
-  * Eugene Wu
+  * Eugene Wu (2006)
 
 We would also like to thank Hee-Jin Chae, Gordon Anderson, and Patrick Stahlberg for their contributions to the project. 
