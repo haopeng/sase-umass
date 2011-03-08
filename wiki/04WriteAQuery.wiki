@@ -71,7 +71,7 @@ This query contains three components, of which the second one is a negation comp
 
 *Q3: Stock market trend:* the price of a stock went beyond a threshold,but after a period the when the price kept increasing or remained relatively stable, the volume plummeted.(The example is from Q3 in SIGMOD2008 [http://sase-umass.googlecode.com/files/sase-sigmod08.pdf paper])
 {{{
-PATTERN SEQ(stock+ a, stock b)
+PATTERN SEQ(stock+ a[], stock b)
 WHERE skip-till-next-match
 AND [symbol]
 AND a[1].price > 1000
