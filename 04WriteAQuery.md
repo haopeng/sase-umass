@@ -1,0 +1,135 @@
+#This page explains how to write a query in the SASE language or in a predefined format.
+
+SASE 1.0 supports two formats for representing a query:
+  * [Query input in the SASE language](http://code.google.com/p/sase-umass/wiki/04WriteAQuery?ts=1298429299&updated=04WriteAQuery#1._Query_Input)
+  * [NFA input](http://code.google.com/p/sase-umass/wiki/04WriteAQuery?ts=1298429861&updated=04WriteAQuery#2._NFA_Input)
+We explain both formats below.
+
+# 1. SASE Language Query Input #
+The SASE language is a declarative language.  The overall structure of the SASE language is :
+```
+PATTERN <sequence pattern>
+[WHERE  <qualification>]
+[WITHIN <time window>]
+```
+## 1.1 Explanation ##
+| **PATTERN** | specifies the pattern in form of SEQ(component, component,...) [(details)](http://code.google.com/p/sase-umass/wiki/04WriteAQuery?ts=1298432132&updated=04WriteAQuery#Pattern_Component).|
+|:------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **WHERE**   | specifies the qualifications. The first line should specify the event selection strategy [(details)](http://code.google.com/p/sase-umass/wiki/04WriteAQuery#Selection_Strategy). The subsequence lines specify a partition attribute or a predicate, one in each line.([details](http://code.google.com/p/sase-umass/wiki/04WriteAQuery?ts=1298433604&updated=04WriteAQuery#Predicate))  |
+| **WITHIN**  | specifies the time window. Here we only allow integers without any units.                                                                                                                |
+
+### Pattern Component ###
+  * A **normal** component is in the format **"EventType var"**, e.g.**`Stock a`**
+  * A **Kleene closure** component is in the format **"EventType+ var`[]`"**, e.g. **`Stock+ a[]`**
+  * A **negation** component is in the format **"!{EventType var}"**,e.g. **`!{Stock a`}**. Negation cannot be used on a Kleene closure component in the current release. When a negation component is included, we only support **skip-till-any-match** strategy ([details](http://code.google.com/p/sase-umass/wiki/04WriteAQuery?ts=1298513282&updated=04WriteAQuery#Event_Selection_Strategy)).
+The variables should follow the alphabetical order, e.g, the first component uses 'a', and the second component uses 'b', etc. A ',' is used between components. For example, a query containing three components can start with this **`PATTERN SEQ(Stock a, Stock+ b[], Stock c)`**.
+### Event Selection Strategy ###
+Event selection strategy addresses how to select the events relevant to a pattern query, not necessarily in contiguous positions in the input stream. We support the following selection strategies:
+  * **partition-contiguity**: If the events are conceptually partitioned based on a condition, the next relevant event must be contiguous to the previous one in the same partition. You can specify an attribute as the partition attribute, then each partition should correspond to a specific value for this attribute.
+  * **skip-till-next-match**: The selection strategy aims to find the "first" match of each pattern component. In the pattern matching process, the next relevant event does not need to be contiguous to the previous one; all irrelevant events will be skipped until the next relevant event is read. This strategy makes the query insensitive to the presence of irrelevant events.
+  * **skip-till-any-match**: The selection strategy aims to find "all" matches of each pattern component. This  relaxes the **skip-till-next-match** by allowing non-deterministic actions on relevant events.
+
+More about event selection strategies, please read Section 2 in our SIGMOD2008 [paper](http://sase-umass.googlecode.com/files/sase-sigmod08.pdf)
+### Predicate ###
+Predicate can use one of the six comparison operators (=, !=, <, >, <=, >=).
+
+Some notes:
+  * Predicates are connected by **AND**.
+  * Each predicate should take **one line**.
+  * You can specify a partition attribute using **"`[AttributeName]`"**, e.g. **`[symbol]`**. If you want to specify more than one partition attributes, please specify one by each line.
+### Kleene Closure ###
+For Kleene closure, some special symbols can be used in square bracket to denote certain events:
+  * **`[1]`** means the first event for the component, e.g. `a[1].price > 1000`
+  * **`[i], [i-1]`** are used to compare two consecutive events for the Kleene closure component, e.g. `a[i].price > a[i-1].price`
+  * **`[..i-1]`** is used to denote all previous events for the Kleene closure component, e.g. `a[i].price > avg(a[..i-1].price)`
+  * We support three kinds of aggregation: **max, min, avg, count and sum**
+## 1.3 Examples ##
+We will use three examples to illustrate the SASE language.
+
+**Q1. Shelf-reading**: the following query retrieves readings at a shelf about a product whose category is food and whose manufacturer has id '1'. (The example is from Q1 in SIGMOD2006 [paper](http://sase-umass.googlecode.com/files/sase-sigmod2006.pdf))
+```
+PATTERN SEQ(SHELF-READING a)
+WHERE skip-till-any-match
+AND a.category = 'food'
+AND manufacturer_id = '1'
+```
+
+There is only one component in this query. The **WHERE** specifies the two predicates. The event selection strategy does not make any difference for this query because it only contains one component.
+
+**Q2. Shoplifting:** the second query detects shoplifting activity. It reports items that were picked at a shelf and then taken out of the store without being checked out. (The example is from Q2 in SIGMOD2006 [paper](http://sase-umass.googlecode.com/files/sase-sigmod2006.pdf))
+```
+PATTERN SEQ(SHELF-READING a, !(COUNTER-READING b), EXIT-READING c)
+WHERE skip-till-any-match
+AND [id]
+WITHIN 12
+```
+
+This query contains three components, of which the second one is a negation component. It constructs of a pattern consisting of the occurrence of a **SHELF-READING** event followed by the non-occurrence of a **COUNTER-READING** event followed by the occurrence of an **EXIT-READING** event.
+
+  * **`WHERE skip-till-any-match`** sets the event selection strategy as "skip-till-any-match".
+  * **`AND [id]`** requires that the **id** attribute of the three events should be equivalent.
+  * **`WITHIN 12`** specifies the time window.
+
+**Q3: Stock market trend:** the price of a stock went beyond a threshold,but after a period the when the price kept increasing or remained relatively stable, the volume plummeted.(The example is from Q3 in SIGMOD2008 [paper](http://sase-umass.googlecode.com/files/sase-sigmod08.pdf))
+```
+PATTERN SEQ(stock+ a[], stock b)
+WHERE skip-till-next-match
+AND [symbol]
+AND a[1].price > 1000
+AND a[i].price > avg(a[..i-1].price)
+AND b.volume < 150
+WITHIN 500
+```
+
+In the **PATTERN** line, we use **`"SEQ(stock+ a[], stock b)"`** to specify there are two components in the pattern. The event type of both components is "stock". The first component is of Kleene closure type, while the second component is a normal component. The aliases for the first and second component are "a" and "b", respectively.
+
+The "condition" part, Line 2 ~ Line 6, sets 5 conditions, one by each line.
+
+  * **` "WHERE skip-till-next-match"`** sets the event selection strategy as "skip-till-next-match".
+  * **`"AND [symbol]"`** configures the "symbol" as the partition attribute.
+  * **`"AND a[1].price % 500 = 0"`** is the "begin" condition for the Kleene closure, which constraints the first event for the component.
+  * **`"AND a[i].price > min(a[..i-1].price)"`** requires each following event should have higher price than the minimum value of previous events for the component.
+
+The last line **`WITHIN 500`** sets the time window as 500.
+
+You can find more examples in SASE 1.0 package under the **examples** folder and the **tests** folder. All query files use the extension **.query**.
+
+# 2. NFA Input #
+
+SASE 1.0 uses a query file to describe a query. A query file consists of two parts: header information and states.
+
+If you want to know more details about the keywords to appear below, please read our [SIGMOD 08 paper](http://sase-umass.googlecode.com/files/sase-sigmod08.pdf), which will help you to understand the queries.
+
+## 2.1 Header ##
+In header information part, we have several parameters:
+|selectionStrategy| specifies the selection strategy for the query, in SASE 1.0, you can choose "skip-till-next-match" or "partition-contiguity"|
+|:----------------|:----------------------------------------------------------------------------------------------------------------------------|
+|timeWindow       | specifies the size of time window                                                                                           |
+|partition attribute | optional, you can specify an attribute as the partition attribute                                                           |
+
+## 2.2 States ##
+Each query is represented by a nondeterministic finite automaton (NFA).  In the second part of the query file, we describe the states of the NFA. For each NFA state, we use one line to describe it. In each line, we have multiple parameters as following:
+
+|State| assigns a number to this state|
+|:----|:------------------------------|
+|type | specifies the type of this state, "normal" or "kleeneClosure"|
+|eventtype| specifies the event type which satisfies this state|
+
+We use an "&" symbol to connect the parameters.
+
+After providing the basic information for this state,  we can describe the edge(s), and each edge can be separated by "|". An edge contains the edgetype and predicate(s).
+
+|edgetype| specifies the type of an edge, "begin" , "take" or "proceed"|
+|:-------|:------------------------------------------------------------|
+|predicate| specifies the requirement for this state                    |
+
+## 2.3 Example ##
+```
+SelectionStrategy = partition-contiguity | TimeWindow = 500 | partitionAttribute = symbol
+State=1 & type = kleeneClosure & eventtype = stock | edgetype = begin  & price % 500 = 0 | edgetype = take | edgetype = proceed 
+State=2 & type = normal & eventtype = stock | edgetype = begin & volume < 150
+end
+```
+
+
+You can find more examples in SASE 1.0 package under the **examples** folder and the **tests** folder. All query files use the extension **.nfa**.

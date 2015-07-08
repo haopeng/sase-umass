@@ -1,0 +1,77 @@
+#This page explains how to run the engine.
+The SASE1.0 can be run from a command-line.
+
+# Running SASE Using a Command Line #
+
+## 1. Test run ##
+The work directory is _**$SASE\_HOME/build**_. Then use the following command to test the engine:
+```
+sase
+```
+This will use the "test.query" and "test.stream" in the work directory.
+
+## 2. Run with configurations ##
+The engine allows you to designate the query file and the stream file, and you can run the engine under any directory using the following command:
+```
+sase  Query_File Stream_File  Print_Result_Flag
+```
+
+The meanings of the parameters are explained as follows:
+
+| Query\_File | specifies the location of the query file, which is the full path of the file |
+|:------------|:-----------------------------------------------------------------------------|
+| Stream\_File | specifies the location of the config file for the stream generator, which is the full path of the file |
+| Print\_Result\_Flag | specifies whether or not to print the details of the result in the console. 1 for print, 0 for not print|
+
+## 3. Modify the code ##
+If you want to modify the source code, the Main Class is **edu.umass.cs.sase.UI.CommandLineUI.java**.
+
+
+
+
+# Running SASE Using a Script #
+The **examples** folder and the **tests** folder in the SASE 1.0 package include the scripts for running a set of experiments. All script files use the extension **.sh**.
+
+# Data Stream and Queries #
+If you want to generate your own data stream or queries, please follow the instructions below:
+  * [How to write a query file](http://code.google.com/p/sase-umass/wiki/04WriteAQuery)
+  * [How to write a config file for the stream generator](http://code.google.com/p/sase-umass/wiki/03ConfigTheStreamGenerator)
+
+# Results #
+If you choose to print results, you can see each pattern match with the relevant events like the following:
+```
+----------Here is the No.20 match----------
+
+This match has selected the following events: 
+
+ID = 29535	Timestamp = 29535	Symbol = 1	Price = 16000	Volume = 678
+ID = 29536	Timestamp = 29536	Symbol = 1	Price = 16001	Volume = 185
+ID = 29538	Timestamp = 29538	Symbol = 1	Price = 16001	Volume = 126
+
+----------Here is the No.21 match----------
+
+This match has selected the following events: 
+
+ID = 33164	Timestamp = 33164	Symbol = 1	Price = 18000	Volume = 863
+ID = 33165	Timestamp = 33165	Symbol = 1	Price = 18003	Volume = 464
+ID = 33166	Timestamp = 33166	Symbol = 1	Price = 18005	Volume = 612
+ID = 33167	Timestamp = 33167	Symbol = 1	Price = 18007	Volume = 543
+ID = 33168	Timestamp = 33168	Symbol = 1	Price = 18008	Volume = 515
+ID = 33169	Timestamp = 33169	Symbol = 1	Price = 18011	Volume = 709
+ID = 33171	Timestamp = 33171	Symbol = 1	Price = 18012	Volume = 73
+
+
+```
+
+No matter whether you choose to print the details of the results, the system will output the profiling numbers like this:
+```
+**************Profiling Numbers*****************
+Total Running Time: 571591000 nanoseconds
+Number Of Events Processed: 100000
+Number Of Runs Created: 203
+Number Of Matches Found: 70
+Throughput: 174950 events/second
+
+```
+
+We include the test results for each experiment under the **examples** folder and the **tests** folder. Due to the difference of machine configuration, the profiling numbers might be different.

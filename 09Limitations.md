@@ -1,0 +1,13 @@
+#This page summarizes the assumptions and known limitations of the code comparing to related research.
+
+# Assumptions #
+We make the following assumptions:
+  * **Time-based window**: the windows is time-based instead of count-based. The timestamps we use are integers without units, and we allow multiple events have the same timestamp.
+  * **Total order**: we assume  events of the input stream are ordering by the occurrence time.
+
+# Known Limitations #
+The SASE 1.0 has the following known limitations:
+  * **Overlapping/non-overlapping**: In our SIGMOD2008 [paper](http://sase-umass.googlecode.com/files/sase-sigmod08.pdf), we mentioned "overlapping/non-overlapping". In this release, we only support the "overlapping" mode. It is not difficult to add the other mode. If you need to run queries under the "overlapping" mode, please let us know and we can add this feature in next update.
+  * **AND (Unordered)**: We do not support the "AND" operator in the sequence pattern, which allows arbitrary order among consecutive components. For example, for pattern `SEQ(A, (B AND C), D)`, both `SEQ(A, B, C, D)` and `SEQ(A, C, B, D)` will be allowed. However, you can send multiple queries, and the union of their results would be equivalent to that of a query with **AND**.
+  * **OR**: We do not support the "OR" operator in the SASE language, which allows alternative events for a component. For example, for pattern `SEQ (A, (B OR C), D)`, both `SEQ(A, B, D)` and `SEQ(A, C, D)` will be allowed. You can send multiple queries, and the union of their results would be equivalent to that of a query with **OR**.
+  * **Imprecise timestamps**: Support for imprecise timestamps, introduced by our VLDB2010 [paper](http://sase-umass.googlecode.com/files/sase-vldb10.pdf) is not included in this release.

@@ -1,0 +1,31 @@
+#This page explains how to configure the stream generator.
+
+# Simulated stock stream #
+In SASE1.0, if you want to use the default simulated stock stream, you can use a stream file to configure the stream generator. There are several parameters you can modify:
+
+| **streamSize**| specifies the number of events in the input stream |
+|:--------------|:---------------------------------------------------|
+| **maxPrice**  | specifies the maximum value for the attribute "Price", the value of "Price" would be uniformly distributed on integers between 1 (inclusive) and the specific value (inclusive).|
+| **numOfSymbol**| specifies the number of possible values for the attribute "Symbol", the value of "Symbol" would be uniformly distributed on integers between 1 (inclusive) and the specific value (inclusive)|
+| **maxVolume** | specifies the maximum value for the attribute "Volume", the value of "Volume" would be uniformly distributed on integers between 1 (inclusive) and the specific value (inclusive)|
+| **randomSeed**| the seed for random number generator               |
+| **increaseProbability**| specifies the probability that the price increases (%), the probabilities that the price stays the same and decreases are both (100 - probability)/2; for example, if the probability is set to 100, the price will strictly increase; if the probability is set to 60, the probability that the price will increase is 60%, the probability that the price will decrease is 20%, and the probability that the price will stay the same is also 20%.|
+
+
+## Example ##
+```
+ streamSize = 100000
+ maxPrice = 1000
+ numOfSymbol = 2
+ maxVolume = 1000
+ randomSeed = 10
+ increaseProbability = 70
+ end
+```
+
+You can find more examples in the SASE 1.0 package under the **examples** folder and the **tests** folder. All query files use the extension **.stream**.
+
+# Customized stream #
+If you want to use your own customized stream, you need to follow these steps.
+  1. Implement the interface **edu.umass.cs.sase.stream.Event**
+  1. In class **edu.umass.cs.sase.stream.StreamController**, add a method to import  or generate your stream, wrapping each event using your own Event class implemented in Step1. **edu.umass.cs.sase.stream.StreamController.generateStockEventsAsConfig()** is a sample method.
